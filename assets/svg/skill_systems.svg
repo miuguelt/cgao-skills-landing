@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.15"/><stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bg"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Glow ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.12" filter="url(#bg)">
+    <animate attributeName="r" values="85;95;85" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Monitor body -->
+  <rect x="35" y="30" width="130" height="95" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="42" y="37" width="116" height="80" rx="4" fill="url(#screenGrad)"/>
+  <!-- Stand -->
+  <rect x="85" y="125" width="30" height="20" rx="2" fill="#334155"/>
+  <rect x="65" y="145" width="70" height="8" rx="4" fill="#334155" stroke="#475569" stroke-width="1"/>
+
+  <!-- Code lines on screen -->
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <line x1="50" y1="50" x2="80" y2="50" stroke="#39FF14" opacity="0.8"><animate attributeName="x2" values="50;80" dur="1s" fill="freeze"/></line>
+    <line x1="50" y1="60" x2="95" y2="60" stroke="#22d3ee" opacity="0.6"><animate attributeName="x2" values="50;95" dur="1.2s" fill="freeze" begin="0.3s"/></line>
+    <line x1="55" y1="70" x2="90" y2="70" stroke="#FFBF00" opacity="0.5"><animate attributeName="x2" values="55;90" dur="1s" fill="freeze" begin="0.6s"/></line>
+    <line x1="55" y1="80" x2="110" y2="80" stroke="#39FF14" opacity="0.6"><animate attributeName="x2" values="55;110" dur="1.4s" fill="freeze" begin="0.9s"/></line>
+    <line x1="50" y1="90" x2="75" y2="90" stroke="#a78bfa" opacity="0.5"><animate attributeName="x2" values="50;75" dur="0.8s" fill="freeze" begin="1.2s"/></line>
+    <line x1="50" y1="100" x2="105" y2="100" stroke="#22d3ee" opacity="0.5"><animate attributeName="x2" values="50;105" dur="1.3s" fill="freeze" begin="1.5s"/></line>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="80" y="47" width="2" height="10" fill="#39FF14">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="47;57;67;77;87;97" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="80;95;90;110;75;105" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Network dots -->
+  <circle cx="140" cy="50" r="3" fill="#39FF14" opacity="0.6" filter="url(#g)"><animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="148" cy="62" r="2" fill="#22d3ee" opacity="0.4" filter="url(#g)"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="0.3s"/></circle>
+  <circle cx="145" cy="75" r="2.5" fill="#FFBF00" opacity="0.5" filter="url(#g)"><animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite" begin="0.6s"/></circle>
+
+  <!-- Data orbiting -->
+  <circle r="2" fill="#39FF14" filter="url(#g)">
+    <animateMotion dur="4s" repeatCount="indefinite" path="M100,100 a50,50 0 1,1 1,0 a50,50 0 1,1 -1,0"/>
+  </circle>
+</svg>

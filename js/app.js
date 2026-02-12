@@ -189,3 +189,52 @@ console.log('%cDesarrollado con pasión para el SENA', 'color: #FFBF00; font-siz
         el.style.opacity = '1';
     });
 })();
+
+// ============================================================
+// DYNAMIC RESULTS TABLE
+// ============================================================
+(function () {
+    const tableBody = document.getElementById('results-table-body');
+
+    if (tableBody) {
+        // Use static data from content.js (Offline-First)
+        const data = (typeof CGAO_DATA !== 'undefined' && CGAO_DATA.results) ? CGAO_DATA.results : [];
+
+        if (data.length > 0) {
+            tableBody.innerHTML = ''; // Clear loading state or static content
+
+            data.forEach(competitor => {
+                const row = document.createElement('tr');
+                row.className = 'border-b border-white/5 hover:bg-white/5 transition-colors group relative overflow-hidden';
+
+                row.innerHTML = `
+                    <td class="py-5 px-4 font-bold text-white relative">
+                        <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b ${competitor.highlight_color} opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        ${competitor.name}
+                    </td>
+                    <td class="py-5 px-4 text-sm">${competitor.program}</td>
+                    <td class="py-5 px-4">
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full ${competitor.bar_color} ${competitor.bar_width} shadow-[0_0_10px_rgba(57,255,20,0.5)]"></div>
+                            </div>
+                            <span class="font-mono text-xs">${competitor.technical_score}</span>
+                        </div>
+                    </td>
+                    <td class="py-5 px-4 ${competitor.text_color} font-mono">${competitor.innovation_score}</td>
+                    <td class="py-5 px-4 font-extrabold ${competitor.text_color} text-lg">${competitor.total_score}</td>
+                    <td class="py-5 px-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full ${competitor.rank_class} text-xs font-bold border">
+                            <i class="${competitor.rank_icon}"></i>
+                            ${competitor.rank}
+                        </div>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        } else {
+            console.error('CGAO_DATA not found. Check content.js');
+            tableBody.innerHTML = '<tr><td colspan="6" class="p-4 text-center text-red-400">Error: Datos no disponibles offline.</td></tr>';
+        }
+    }
+})();

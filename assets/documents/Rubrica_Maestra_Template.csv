@@ -1,0 +1,9 @@
+ID,MODULO,ASPECTO,CRITERIO_DETALLADO,TIPO_(M/J/P),PUNTOS_MAX,DESCRIPCION_CUMPLIMIENTO
+1.1,A,Fundamentos,Cálculo de resistencia total en circuito serie,M,2.0,Valor exacto: 1.5kΩ ±5%
+1.2,A,Fundamentos,Diagrama de flujo lógico correcto,J,3.0,0=No inicia, 1=Incompleto, 2=Funcional, 3=Optimizado
+2.1,B,Core Skill,Conexión de base de datos exitosa,M,5.0,Conexión establecida y query retornando datos
+2.2,B,Core Skill,Validación de formulario (Frontend),M,3.0,No permite envío de campos vacíos
+2.3,B,Core Skill,Diseño responsivo en móvil,J,4.0,0=Roto, 1=Scroll horizontal, 2=Adaptable, 3=Fluido y Nativo
+3.1,C,Speed Test,Tiempo de ejecución < 50ms,M,2.0,Si el script corre en bajo 50ms = 2pts
+4.1,D,Sostenibilidad,Uso eficiente de material (Desperdicio < 5%),M,3.0,Pesaje de residuos al final de la prueba
+4.2,D,Sostenibilidad,Limpieza del puesto de trabajo,P,2.0,Mesa limpia y herramientas ordenadas al finalizar

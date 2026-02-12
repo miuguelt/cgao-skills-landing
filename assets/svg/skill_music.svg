@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="noteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFBF00"/><stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bg"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Glow ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.12" filter="url(#bg)">
+    <animate attributeName="r" values="85;95;85" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Sound wave arcs -->
+  <g fill="none" stroke-linecap="round" filter="url(#g)">
+    <path d="M125 75 Q145 90 125 110" stroke="#39FF14" stroke-width="2.5" opacity="0.6"><animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite"/></path>
+    <path d="M135 65 Q165 90 135 120" stroke="#39FF14" stroke-width="2" opacity="0.4"><animate attributeName="opacity" values="0;0.4;0" dur="2s" repeatCount="indefinite" begin="0.3s"/></path>
+    <path d="M145 55 Q185 90 145 130" stroke="#39FF14" stroke-width="1.5" opacity="0.3"><animate attributeName="opacity" values="0;0.3;0" dur="2s" repeatCount="indefinite" begin="0.6s"/></path>
+  </g>
+
+  <!-- Main music note -->
+  <g filter="url(#g)">
+    <!-- Note head -->
+    <ellipse cx="90" cy="115" rx="16" ry="12" fill="url(#noteGrad)" transform="rotate(-15 90 115)"/>
+    <!-- Stem -->
+    <line x1="105" y1="110" x2="105" y2="55" stroke="#FFBF00" stroke-width="4" stroke-linecap="round"/>
+    <!-- Flag -->
+    <path d="M105 55 Q125 65 120 80 Q115 70 105 72" fill="#FFBF00"/>
+  </g>
+
+  <!-- Second smaller note -->
+  <g filter="url(#g)" opacity="0.6">
+    <ellipse cx="55" cy="145" rx="10" ry="8" fill="#a78bfa" transform="rotate(-10 55 145)"/>
+    <line x1="64" y1="140" x2="64" y2="105" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
+    <path d="M64 105 Q78 112 75 122 Q72 115 64 116" fill="#a78bfa"/>
+  </g>
+
+  <!-- Floating particles (rhythm dots) -->
+  <circle r="2" fill="#FFBF00" filter="url(#g)">
+    <animate attributeName="cy" values="180;20" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="40;60;40" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#a78bfa" filter="url(#g)">
+    <animate attributeName="cy" values="190;10" dur="7s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="cx" values="150;130;150" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.8;0" dur="7s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle r="1.5" fill="#39FF14" filter="url(#g)">
+    <animate attributeName="cy" values="170;30" dur="5s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="cx" values="160;170;160" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="5s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+
+  <!-- EQ bars at bottom -->
+  <g opacity="0.5">
+    <rect x="30" y="160" width="5" height="15" rx="2" fill="#39FF14"><animate attributeName="height" values="15;25;10;20;15" dur="1.5s" repeatCount="indefinite"/><animate attributeName="y" values="160;150;165;155;160" dur="1.5s" repeatCount="indefinite"/></rect>
+    <rect x="40" y="155" width="5" height="20" rx="2" fill="#FFBF00"><animate attributeName="height" values="20;10;25;15;20" dur="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="155;165;150;160;155" dur="1.2s" repeatCount="indefinite"/></rect>
+    <rect x="50" y="158" width="5" height="17" rx="2" fill="#a78bfa"><animate attributeName="height" values="17;30;12;22;17" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="158;145;163;153;158" dur="1.8s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>

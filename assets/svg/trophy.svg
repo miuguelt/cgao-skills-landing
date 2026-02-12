@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650">
+  <defs>
+    <linearGradient id="cupGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/><stop offset="35%" stop-color="#FFBF00"/><stop offset="70%" stop-color="#d97706"/><stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="cupGoldRev" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/><stop offset="30%" stop-color="#d97706"/><stop offset="65%" stop-color="#FFBF00"/><stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+    <linearGradient id="stemMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/><stop offset="50%" stop-color="#334155"/><stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="neonLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/><stop offset="50%" stop-color="#39FF14" stop-opacity="1"/><stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glSm"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/></filter>
+  </defs>
+
+  <!-- Base reflection glow -->
+  <ellipse cx="250" cy="580" rx="120" ry="15" fill="#39FF14" opacity="0.15" filter="url(#gl)">
+    <animate attributeName="rx" values="120;150;120" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Platform -->
+  <rect x="130" y="540" width="240" height="50" rx="10" fill="url(#stemMetal)" stroke="#475569" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="140" y="545" width="220" height="3" rx="1" fill="#39FF14" opacity="0.3"/>
+  <text x="250" y="563" text-anchor="middle" fill="#39FF14" font-size="11" font-weight="800" font-family="Inter" letter-spacing="2">CGAO SKILLS</text>
+  <text x="250" y="578" text-anchor="middle" fill="#94a3b8" font-size="7" font-family="Inter" letter-spacing="1">LA FRAGUA DEL ORIENTE</text>
+
+  <!-- Stem -->
+  <rect x="225" y="470" width="50" height="75" rx="6" fill="url(#stemMetal)" stroke="#475569" stroke-width="1.5"/>
+  <line x1="250" y1="475" x2="250" y2="540" stroke="#39FF14" stroke-width="1" opacity="0.3" stroke-dasharray="3,4"/>
+
+  <!-- Cup Body — main shape -->
+  <path d="M250 130 Q140 170 145 300 Q150 400 200 460 Q230 480 250 490 Q270 480 300 460 Q350 400 355 300 Q360 170 250 130Z" fill="url(#cupGold)" opacity="0.9" filter="url(#shadow)"/>
+  <!-- Cup highlight -->
+  <path d="M250 140 Q180 170 185 280 Q190 360 220 410 Q240 430 250 440" fill="none" stroke="#FEF3C7" stroke-width="3" opacity="0.4"/>
+  <!-- Cup secondary highlight -->
+  <path d="M250 140 Q320 170 315 280 Q310 360 280 410" fill="none" stroke="#92400e" stroke-width="2" opacity="0.3"/>
+
+  <!-- Handles -->
+  <path d="M145 210 Q80 210 80 290 Q80 370 145 370" fill="none" stroke="url(#cupGold)" stroke-width="10" stroke-linecap="round" filter="url(#glSm)"/>
+  <path d="M355 210 Q420 210 420 290 Q420 370 355 370" fill="none" stroke="url(#cupGoldRev)" stroke-width="10" stroke-linecap="round" filter="url(#glSm)"/>
+
+  <!-- Circuit traces overlay -->
+  <g stroke="#39FF14" stroke-width="1" opacity="0.4" fill="none">
+    <path d="M200 200 L220 220 L220 300 L210 350"><animate attributeName="stroke-dasharray" values="0,200;200,0" dur="3s" repeatCount="indefinite"/></path>
+    <path d="M300 200 L280 220 L280 300 L290 350"><animate attributeName="stroke-dasharray" values="0,200;200,0" dur="3s" repeatCount="indefinite" begin="0.5s"/></path>
+    <path d="M220 250 L250 240 L280 250"><animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite" begin="1s"/></path>
+    <circle cx="220" cy="220" r="3" fill="#39FF14"/><circle cx="280" cy="220" r="3" fill="#39FF14"/><circle cx="250" cy="240" r="3" fill="#FFBF00"/>
+  </g>
+
+  <!-- Star at top -->
+  <g filter="url(#gl)">
+    <polygon points="250,60 258,85 285,88 265,105 270,132 250,118 230,132 235,105 215,88 242,85" fill="#FFBF00">
+      <animateTransform attributeName="transform" type="rotate" from="0 250 95" to="360 250 95" dur="15s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Orbiting particles -->
+  <circle cx="250" cy="300" r="2.5" fill="#39FF14" filter="url(#glSm)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M0,0 a130,130 0 1,1 1,0 a130,130 0 1,1 -1,0"/>
+  </circle>
+  <circle cx="250" cy="300" r="2" fill="#FFBF00" filter="url(#glSm)">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M0,0 a150,150 0 1,0 -1,0 a150,150 0 1,0 1,0"/>
+  </circle>
+  <circle cx="250" cy="300" r="1.5" fill="#fff" filter="url(#glSm)">
+    <animateMotion dur="10s" repeatCount="indefinite" path="M0,0 a170,100 0 1,1 1,0 a170,100 0 1,1 -1,0"/>
+  </circle>
+</svg>

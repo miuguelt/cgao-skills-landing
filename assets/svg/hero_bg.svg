@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bgCore" cx="50%" cy="60%" r="70%">
+      <stop offset="0%" stop-color="#1a3320"/>
+      <stop offset="40%" stop-color="#0f1a14"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="pulse1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pulse2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFBF00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bigGlow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Deep dark background -->
+  <rect width="100%" height="100%" fill="url(#bgCore)"/>
+
+  <!-- Hex grid overlay -->
+  <pattern id="hex" width="56" height="48.5" patternUnits="userSpaceOnUse" patternTransform="scale(1.8)">
+    <path d="M28 0 L56 14 L56 42 L28 56 L0 42 L0 14 Z" fill="none" stroke="#39FF14" stroke-width="0.4" opacity="0.06"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#hex)"/>
+
+  <!-- Large plasma orbs with blur -->
+  <circle cx="400" cy="700" r="350" fill="url(#pulse1)" filter="url(#bigGlow)">
+    <animate attributeName="cx" values="400;1200;600;400" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="700;300;900;700" dur="35s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="350;500;300;350" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1500" cy="300" r="280" fill="url(#pulse2)" filter="url(#bigGlow)">
+    <animate attributeName="cx" values="1500;600;1400;1500" dur="25s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="300;800;400;300" dur="28s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="280;420;250;280" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="960" cy="540" r="200" fill="url(#pulse1)" opacity="0.3" filter="url(#bigGlow)">
+    <animate attributeName="r" values="200;320;200" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.15;0.3" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Forge Central Flame -->
+  <g filter="url(#bigGlow)" opacity="0.7">
+    <path d="M960 1100 Q880 900 920 700 Q960 550 960 400 Q960 550 1000 700 Q1040 900 960 1100" fill="#39FF14" opacity="0.3">
+      <animate attributeName="d" values="M960 1100 Q880 900 920 700 Q960 550 960 400 Q960 550 1000 700 Q1040 900 960 1100;M960 1100 Q900 850 930 650 Q960 500 960 350 Q960 500 990 650 Q1020 850 960 1100;M960 1100 Q880 900 920 700 Q960 550 960 400 Q960 550 1000 700 Q1040 900 960 1100" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M960 1100 Q910 950 940 780 Q960 650 960 500 Q960 650 980 780 Q1010 950 960 1100" fill="#FFBF00" opacity="0.4">
+      <animate attributeName="d" values="M960 1100 Q910 950 940 780 Q960 650 960 500 Q960 650 980 780 Q1010 950 960 1100;M960 1100 Q920 920 945 750 Q960 600 960 450 Q960 600 975 750 Q1000 920 960 1100;M960 1100 Q910 950 940 780 Q960 650 960 500 Q960 650 980 780 Q1010 950 960 1100" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Spark shower -->
+  <g filter="url(#glow)">
+    <circle r="3" fill="#FFBF00"><animate attributeName="cx" values="300;320;280;300" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="4s" repeatCount="indefinite" begin="0s"/><animate attributeName="opacity" values="1;0.8;0" dur="4s" repeatCount="indefinite" begin="0s"/></circle>
+    <circle r="4" fill="#39FF14"><animate attributeName="cx" values="600;580;620;600" dur="8s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="5s" repeatCount="indefinite" begin="0.5s"/><animate attributeName="opacity" values="0.8;1;0" dur="5s" repeatCount="indefinite" begin="0.5s"/></circle>
+    <circle r="2" fill="#FFBF00"><animate attributeName="cx" values="900;880;920;900" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="3.5s" repeatCount="indefinite" begin="1s"/><animate attributeName="opacity" values="1;0.6;0" dur="3.5s" repeatCount="indefinite" begin="1s"/></circle>
+    <circle r="5" fill="#39FF14"><animate attributeName="cx" values="1200;1230;1180;1200" dur="9s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="6s" repeatCount="indefinite" begin="0.3s"/><animate attributeName="opacity" values="0.6;1;0" dur="6s" repeatCount="indefinite" begin="0.3s"/></circle>
+    <circle r="3" fill="#FFBF00"><animate attributeName="cx" values="1500;1520;1480;1500" dur="5s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="4.5s" repeatCount="indefinite" begin="2s"/><animate attributeName="opacity" values="1;0.7;0" dur="4.5s" repeatCount="indefinite" begin="2s"/></circle>
+    <circle r="2" fill="#39FF14"><animate attributeName="cx" values="1800;1780;1820;1800" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="5.5s" repeatCount="indefinite" begin="1.5s"/><animate attributeName="opacity" values="0.9;0.5;0" dur="5.5s" repeatCount="indefinite" begin="1.5s"/></circle>
+    <circle r="3" fill="#fff"><animate attributeName="cx" values="450;430;470;450" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="7s" repeatCount="indefinite" begin="0.8s"/><animate attributeName="opacity" values="0.5;0.3;0" dur="7s" repeatCount="indefinite" begin="0.8s"/></circle>
+    <circle r="2" fill="#fff"><animate attributeName="cx" values="1350;1370;1330;1350" dur="8s" repeatCount="indefinite"/><animate attributeName="cy" values="1100;-50" dur="6.5s" repeatCount="indefinite" begin="1.2s"/><animate attributeName="opacity" values="0.4;0.2;0" dur="6.5s" repeatCount="indefinite" begin="1.2s"/></circle>
+  </g>
+
+  <!-- Glowing anvil silhouette at bottom -->
+  <g filter="url(#glow)" opacity="0.15">
+    <rect x="860" y="920" width="200" height="20" rx="3" fill="#FFBF00"/>
+    <rect x="880" y="880" width="160" height="40" rx="5" fill="#8b6914"/>
+    <rect x="920" y="840" width="80" height="40" rx="2" fill="#6b5210"/>
+  </g>
+</svg>

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth scroll-pt-20">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="CGAO SKILLS: La Fragua del Oriente - Competencia de habilidades técnicas del Centro de Gestión Administrativa de Oriente SENA.">
+        content="CGAO SKILLS: La Fragua del Oriente - Competencia de habilidades técnicas del Centro de Gestión Agroempresarial del Oriente - SENA.">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CGAO SKILLS | La Fragua del Oriente">
+    <meta property="og:description"
+        content="Competencia de habilidades técnicas de alto nivel en Vélez, Santander. Donde la tradición se tecnifica.">
+    <meta property="og:image" content="assets/svg/hero_bg.svg">
+    <meta property="og:url" content="https://cgaoskills.sena.edu.co/">
+
     <title>CGAO SKILLS | La Fragua del Oriente</title>
 
     <!-- Google Fonts -->
@@ -44,19 +53,20 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#presentacion" title="Identidad"
+                    <a href="#presentacion" title="Identidad" aria-label="Ir a la sección de Identidad"
                         class="text-gray-200 hover:text-neon-green transition-colors">Identidad</a>
-                    <a href="#concepto" title="Concepto"
+                    <a href="#concepto" title="Concepto" aria-label="Ir a la sección de Concepto"
                         class="text-gray-200 hover:text-neon-green transition-colors">Concepto</a>
-                    <a href="#skills" title="Skills"
+                    <a href="#skills" title="Skills" aria-label="Ir a la sección de Skills y áreas de competencia"
                         class="text-gray-200 hover:text-neon-green transition-colors">Skills</a>
-                    <a href="#agenda" title="Agenda"
+                    <a href="#agenda" title="Agenda" aria-label="Ir a la sección de Agenda y cronograma"
                         class="text-gray-200 hover:text-neon-green transition-colors">Agenda</a>
                     <a href="#contextualizacion" title="Proceso"
+                        aria-label="Ir a la sección de Proceso y contextualización"
                         class="text-gray-200 hover:text-neon-green transition-colors">Proceso</a>
-                    <a href="#resultados" title="Resultados"
+                    <a href="#resultados" title="Resultados" aria-label="Ir a la sección de Resultados y casos de éxito"
                         class="text-gray-200 hover:text-neon-green transition-colors">Resultados</a>
-                    <a href="#evaluacion" title="KPIs"
+                    <a href="#evaluacion" title="KPIs" aria-label="Ir a la sección de KPIs e indicadores de éxito"
                         class="text-gray-200 hover:text-neon-green transition-colors">KPIs</a>
                     <a href="#inscribir" title="Inscribirse"
                         class="px-5 py-2 rounded-full bg-gradient-to-r from-neon-green to-amber-gold text-slate-950 font-semibold hover:opacity-90 transition-opacity">
@@ -107,21 +117,8 @@
         </div>
 
         <!-- Forge/Fire SVG Background -->
-        <div class="absolute inset-0 flex items-center justify-center opacity-10">
-            <svg viewBox="0 0 400 400" class="w-[600px] h-[600px] animate-pulse-slow">
-                <defs>
-                    <radialGradient id="fire-grad" cx="50%" cy="80%" r="60%">
-                        <stop offset="0%" stop-color="#FFBF00" stop-opacity="1" />
-                        <stop offset="50%" stop-color="#ff6b00" stop-opacity="0.8" />
-                        <stop offset="100%" stop-color="#39FF14" stop-opacity="0" />
-                    </radialGradient>
-                </defs>
-                <ellipse cx="200" cy="350" rx="150" ry="40" fill="url(#fire-grad)" />
-                <path d="M200 350 Q150 280 180 200 Q200 150 200 100 Q200 150 220 200 Q250 280 200 350"
-                    fill="url(#fire-grad)" opacity="0.8" />
-                <path d="M200 350 Q170 300 190 240 Q200 200 200 160 Q200 200 210 240 Q230 300 200 350" fill="#FFBF00"
-                    opacity="0.6" />
-            </svg>
+        <div class="absolute inset-0 flex items-center justify-center opacity-30">
+            <img src="assets/svg/hero_bg.svg" alt="Fondo Animado Forja" class="w-full h-full object-cover">
         </div>
 
         <!-- Hero Content -->
@@ -186,7 +183,7 @@
             </div>
 
             <!-- CTA Button -->
-            <a href="#inscribir" title="Inscribir Talento"
+            <a href="#inscribir" title="Inscribir Talento" aria-label="Ir a la sección de inscripción de talento"
                 class="btn-shine inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-neon-green to-amber-gold text-slate-950 font-bold text-lg md:text-xl hover:scale-105 transition-transform animate-glow animate-slide-up ani-delay-3000">
                 <i class="fas fa-user-plus"></i>
                 Inscribir Talento
@@ -224,105 +221,13 @@
 
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <!-- Trophy SVG Concept -->
-                <div class="glass rounded-3xl p-8 md:p-10 flex items-center justify-center">
-                    <svg viewBox="0 0 300 380" class="w-full max-w-[280px]" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="trophy-green" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#39FF14" stop-opacity="0.9" />
-                                <stop offset="100%" stop-color="#10b981" stop-opacity="0.7" />
-                            </linearGradient>
-                            <linearGradient id="trophy-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.9" />
-                                <stop offset="100%" stop-color="#d97706" stop-opacity="0.7" />
-                            </linearGradient>
-                            <linearGradient id="trophy-base" x1="0%" y1="0%" x2="0%" y2="100%">
-                                <stop offset="0%" stop-color="#334155" />
-                                <stop offset="100%" stop-color="#1e293b" />
-                            </linearGradient>
-                            <filter id="trophy-glow">
-                                <feGaussianBlur stdDeviation="4" result="blur" />
-                                <feMerge>
-                                    <feMergeNode in="blur" />
-                                    <feMergeNode in="SourceGraphic" />
-                                </feMerge>
-                            </filter>
-                            <filter id="cyan-glow">
-                                <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22d3ee"
-                                    flood-opacity="0.6" />
-                            </filter>
-                        </defs>
-
-                        <!-- Base glow -->
-                        <ellipse cx="150" cy="340" rx="80" ry="8" fill="#22d3ee" opacity="0.3"
-                            filter="url(#cyan-glow)" />
-
-                        <!-- Base platform -->
-                        <rect x="80" y="310" width="140" height="35" rx="8" fill="url(#trophy-base)" stroke="#475569"
-                            stroke-width="1.5" />
-                        <!-- Engraved text -->
-                        <text x="150" y="323" text-anchor="middle" fill="#39FF14" font-size="7" font-weight="800"
-                            font-family="Inter" letter-spacing="1">CGAO SKILLS</text>
-                        <text x="150" y="335" text-anchor="middle" fill="#94a3b8" font-size="5.5" font-family="Inter"
-                            letter-spacing="0.5">LA FRAGUA DEL ORIENTE</text>
-
-                        <!-- Stem -->
-                        <rect x="140" y="270" width="20" height="45" rx="4" fill="url(#trophy-base)" stroke="#475569"
-                            stroke-width="1" />
-
-                        <!-- Circuit traces (golden mesh overlay) -->
-                        <g opacity="0.6" stroke="#FFBF00" stroke-width="0.8" fill="none">
-                            <path d="M100 120 L120 140 L120 180 L110 200" />
-                            <path d="M200 120 L180 140 L180 180 L190 200" />
-                            <path d="M120 140 L150 130 L180 140" />
-                            <path d="M130 160 L150 155 L170 160" />
-                            <path d="M115 190 L150 180 L185 190" />
-                            <path d="M140 210 L150 205 L160 210" />
-                            <!-- Nodes -->
-                            <circle cx="120" cy="140" r="3" fill="#FFBF00" />
-                            <circle cx="180" cy="140" r="3" fill="#FFBF00" />
-                            <circle cx="150" cy="130" r="3" fill="#FFBF00" />
-                            <circle cx="130" cy="160" r="3" fill="#FFBF00" />
-                            <circle cx="170" cy="160" r="3" fill="#FFBF00" />
-                            <circle cx="150" cy="155" r="2.5" fill="#FFBF00" />
-                            <circle cx="115" cy="190" r="3" fill="#FFBF00" />
-                            <circle cx="185" cy="190" r="3" fill="#FFBF00" />
-                        </g>
-
-                        <!-- Guava leaf form (trophy cup shape) -->
-                        <path
-                            d="M150 80 Q90 110 95 170 Q100 220 130 260 Q140 270 150 275 Q160 270 170 260 Q200 220 205 170 Q210 110 150 80Z"
-                            fill="url(#trophy-green)" opacity="0.25" filter="url(#trophy-glow)" />
-                        <path
-                            d="M150 80 Q90 110 95 170 Q100 220 130 260 Q140 270 150 275 Q160 270 170 260 Q200 220 205 170 Q210 110 150 80Z"
-                            fill="none" stroke="#39FF14" stroke-width="2" />
-
-                        <!-- Central leaf vein -->
-                        <path d="M150 90 L150 260" stroke="#39FF14" stroke-width="1.5" stroke-dasharray="4,3"
-                            opacity="0.5" />
-                        <path d="M150 120 L125 150 M150 150 L175 170 M150 180 L130 210 M150 210 L170 230"
-                            stroke="#39FF14" stroke-width="1" opacity="0.4" />
-
-                        <!-- Trophy handles -->
-                        <path d="M95 140 Q60 140 60 175 Q60 210 95 210" fill="none" stroke="url(#trophy-gold)"
-                            stroke-width="3" stroke-linecap="round" />
-                        <path d="M205 140 Q240 140 240 175 Q240 210 205 210" fill="none" stroke="url(#trophy-gold)"
-                            stroke-width="3" stroke-linecap="round" />
-
-                        <!-- Star at top -->
-                        <polygon points="150,50 155,65 170,67 158,77 162,92 150,84 138,92 142,77 130,67 145,65"
-                            fill="#FFBF00" filter="url(#trophy-glow)" />
-
-                        <!-- Floating particles -->
-                        <circle cx="85" cy="100" r="2" fill="#39FF14" opacity="0.5">
-                            <animate attributeName="cy" values="100;90;100" dur="3s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="215" cy="110" r="1.5" fill="#FFBF00" opacity="0.5">
-                            <animate attributeName="cy" values="110;98;110" dur="2.5s" repeatCount="indefinite" />
-                        </circle>
-                        <circle cx="130" cy="70" r="1.5" fill="#22d3ee" opacity="0.4">
-                            <animate attributeName="cy" values="70;62;70" dur="4s" repeatCount="indefinite" />
-                        </circle>
-                    </svg>
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 flex items-center justify-center relative overflow-hidden group">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-neon-green/5 to-amber-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                    </div>
+                    <img src="assets/svg/trophy.svg" alt="Trofeo CGAO Skills"
+                        class="w-full max-w-[320px] drop-shadow-[0_0_20px_rgba(57,255,20,0.2)] animate-float">
                 </div>
 
                 <!-- Identity Pillars -->
@@ -336,10 +241,10 @@
                             </div>
                             <div>
                                 <p class="text-gray-400 text-xs uppercase tracking-wider">Título</p>
-                                <h4 class="text-xl font-bold text-white">CGAO SKILLS: La Fragua del Oriente</h4>
+                                <h4 class="text-2xl font-bold text-white">CGAO SKILLS: La Fragua del Oriente</h4>
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed ml-16">
+                        <p class="text-gray-300 text-sm leading-relaxed ml-16 text-justify">
                             Evoca la <span class="text-amber-gold font-semibold">fragua</span> (el taller donde se forja
                             el metal y el carácter),
                             haciendo alusión al trabajo duro de la región, elevado a un estatus de competencia de élite.
@@ -355,10 +260,10 @@
                             </div>
                             <div>
                                 <p class="text-gray-400 text-xs uppercase tracking-wider">Adjetivo</p>
-                                <h4 class="text-xl font-bold text-amber-gold">Disruptivo</h4>
+                                <h4 class="text-2xl font-bold text-amber-gold">Disruptivo</h4>
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed ml-16">
+                        <p class="text-gray-300 text-sm leading-relaxed ml-16 text-justify">
                             Rompe con el pasado para crear un <span class="text-neon-green font-semibold">nuevo
                                 estándar</span>.
                             La transición del saber empírico al saber técnico estandarizado.
@@ -374,10 +279,10 @@
                             </div>
                             <div>
                                 <p class="text-gray-400 text-xs uppercase tracking-wider">Slogan</p>
-                                <h4 class="text-xl font-bold text-white italic">"Donde la tradición se tecnifica."</h4>
+                                <h4 class="text-2xl font-bold text-white italic">"Donde la tradición se tecnifica."</h4>
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm leading-relaxed ml-16">
+                        <p class="text-gray-300 text-sm leading-relaxed ml-16 text-justify">
                             La fusión de la <span class="text-amber-gold font-semibold">tradición productiva</span> de
                             Vélez
                             (bocadillo, panela, café) con la <span class="text-neon-green font-semibold">vanguardia
@@ -407,8 +312,10 @@
 
             <!-- Asymmetric Grid -->
             <div class="grid md:grid-cols-12 gap-6 md:gap-8">
-                <!-- Mission Card (Large) -->
                 <div class="md:col-span-7 glass rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                    <img src="assets/svg/mission.svg"
+                        class="absolute right-0 bottom-0 w-3/4 h-full object-contain opacity-10 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none"
+                        alt="Misión Abstracta">
                     <div
                         class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-neon-green/20 to-transparent rounded-full blur-3xl group-hover:opacity-75 transition-opacity">
                     </div>
@@ -418,7 +325,7 @@
                             <i class="fas fa-rocket text-slate-950 text-2xl"></i>
                         </div>
                         <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">Misión</h3>
-                        <p class="text-gray-200 text-lg leading-relaxed">
+                        <p class="text-gray-200 text-lg leading-relaxed text-justify">
                             Elevar el <span class="text-neon-green font-semibold">estándar técnico</span> del talento
                             humano
                             en la provincia de Vélez, mediante una plataforma competitiva de alto rendimiento que valide
@@ -429,8 +336,10 @@
                     </div>
                 </div>
 
-                <!-- Vision Card -->
                 <div class="md:col-span-5 glass rounded-3xl p-8 md:p-12 relative overflow-hidden group">
+                    <img src="assets/svg/vision.svg"
+                        class="absolute -right-4 -bottom-4 w-48 h-48 object-contain opacity-10 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none"
+                        alt="Visión Abstracta">
                     <div
                         class="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-amber-gold/20 to-transparent rounded-full blur-3xl group-hover:opacity-75 transition-opacity">
                     </div>
@@ -440,10 +349,10 @@
                             <i class="fas fa-eye text-slate-950 text-2xl"></i>
                         </div>
                         <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">Visión</h3>
-                        <p class="text-gray-200 text-lg leading-relaxed">
+                        <p class="text-gray-200 text-lg leading-relaxed text-justify">
                             Consolidar al <span class="text-amber-gold font-semibold">CGAO SKILLS</span> para el año
                             2028
-                            como el referente indiscutible de excelencia técnica en el nororiente colombiano, siendo la
+                            como el referente indiscutible de excelencia técnica en el oriente colombiano, siendo la
                             cantera principal de competidores para <span
                                 class="text-neon-green font-semibold">WorldSkills Colombia</span>
                             y un motor de transferencia tecnológica para el sector productivo de Santander.
@@ -503,8 +412,9 @@
                 <div
                     class="glass p-8 rounded-3xl border border-white/10 hover:border-neon-green/50 transition-all group">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-neon-green/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-seedling text-neon-green text-3xl"></i>
+                        class="w-16 h-16 rounded-2xl bg-neon-green/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(57,255,20,0.2)]">
+                        <img src="assets/svg/skill_agro.svg" class="w-10 h-10 object-contain"
+                            alt="Gestión Agroempresarial">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Gestión Agroempresarial</h3>
                     <p class="text-gray-400 mb-6 lowercase">Optimización de procesos rurales mediante tecnología 4.0 y
@@ -519,8 +429,8 @@
                 <div
                     class="glass p-8 rounded-3xl border border-white/10 hover:border-amber-gold/50 transition-all group">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-amber-gold/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-laptop-code text-amber-gold text-3xl"></i>
+                        class="w-16 h-16 rounded-2xl bg-amber-gold/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,191,0,0.2)]">
+                        <img src="assets/svg/skill_systems.svg" class="w-10 h-10 object-contain" alt="Sistemas">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Sistemas y Mercados</h3>
                     <p class="text-gray-400 mb-6 lowercase">Desarrollo de ecosistemas digitales y gestión estratégica de
@@ -534,8 +444,8 @@
                 <!-- Skill 3: Admin & Finance -->
                 <div class="glass p-8 rounded-3xl border border-white/10 hover:border-blue-400/50 transition-all group">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-blue-400/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-chart-pie text-blue-400 text-3xl"></i>
+                        class="w-16 h-16 rounded-2xl bg-blue-400/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(96,165,250,0.2)]">
+                        <img src="assets/svg/skill_finance.svg" class="w-10 h-10 object-contain" alt="Finanzas">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Contabilidad y Gestión</h3>
                     <p class="text-gray-400 mb-6 lowercase">Estructuración financiera y administrativa para empresas de
@@ -550,8 +460,8 @@
                 <div
                     class="glass p-8 rounded-3xl border border-white/10 hover:border-purple-400/50 transition-all group">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-purple-400/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-music text-purple-400 text-3xl"></i>
+                        class="w-16 h-16 rounded-2xl bg-purple-400/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(192,132,252,0.2)]">
+                        <img src="assets/svg/skill_music.svg" class="w-10 h-10 object-contain" alt="Música">
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Escuelas de Música</h3>
                     <p class="text-gray-400 mb-6 lowercase">Coordinación y gestión de procesos artísticos con estándar
@@ -728,6 +638,15 @@
                 </p>
             </div>
 
+            <!-- Process Visual -->
+            <div class="mb-16 flex justify-center animate-slide-up">
+                <div
+                    class="glass p-6 rounded-3xl w-full max-w-3xl hover:border-neon-green/30 transition-colors duration-500">
+                    <img src="assets/svg/process.svg" alt="Algoritmo de Ejecución"
+                        class="w-full h-auto drop-shadow-[0_0_15px_rgba(57,255,20,0.1)]">
+                </div>
+            </div>
+
             <!-- FASE 1 -->
             <div class="mb-12">
                 <div class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group">
@@ -753,6 +672,22 @@
                         <p class="text-gray-200 mb-8 text-lg">No es un examen, es un <span
                                 class="text-amber-gold font-semibold">reto real</span>. El Test Project debe simular un
                             escenario productivo que demuestre competencia integral.</p>
+
+                        <!-- Generated Docs Links -->
+                        <div class="flex flex-wrap gap-4 mb-8">
+                            <a href="assets/generated_docs/Guia_Tecnica_Diseno_Prueba.pdf" target="_blank"
+                                class="inline-flex items-center px-4 py-2 rounded-lg bg-neon-green/10 border border-neon-green/30 text-neon-green hover:bg-neon-green/20 transition-all text-sm font-bold">
+                                <i class="fas fa-file-pdf mr-2"></i> Guía Técnica de Diseño
+                            </a>
+                            <a href="assets/generated_docs/Rubrica_Maestra_Template.pdf" target="_blank"
+                                class="inline-flex items-center px-4 py-2 rounded-lg bg-blue-400/10 border border-blue-400/30 text-blue-400 hover:bg-blue-400/20 transition-all text-sm font-bold">
+                                <i class="fas fa-table mr-2"></i> Plantilla Rúbrica Maestra
+                            </a>
+                            <a href="assets/generated_docs/Manual_Sostenibilidad_y_Etica.pdf" target="_blank"
+                                class="inline-flex items-center px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 transition-all text-sm font-bold">
+                                <i class="fas fa-leaf mr-2"></i> Manual Sostenibilidad & Ética
+                            </a>
+                        </div>
 
                         <div class="grid md:grid-cols-3 gap-6">
                             <!-- Definición -->
@@ -814,27 +749,72 @@
                                     <i class="fas fa-clipboard-check text-purple-400 text-xl"></i>
                                     <h4 class="text-lg font-bold text-white">Esquema de Marca</h4>
                                 </div>
-                                <p class="text-gray-300 text-sm mb-3">Hoja de cálculo de evaluación con dos tipos de
-                                    criterio:</p>
-                                <div class="space-y-3">
-                                    <div class="p-3 rounded-lg border border-neon-green/20">
-                                        <p class="text-neon-green text-xs font-bold uppercase"><i
-                                                class="fas fa-ruler mr-1"></i> Measurement</p>
-                                        <p class="text-gray-200 text-sm">¿El producto mide 10×5 cm? <span
-                                                class="text-white font-bold">(SÍ / NO)</span></p>
-                                    </div>
-                                    <div class="p-3 rounded-lg border border-amber-gold/20">
-                                        <p class="text-amber-gold text-xs font-bold uppercase"><i
-                                                class="fas fa-star-half-alt mr-1"></i> Judgement</p>
-                                        <p class="text-gray-200 text-sm">Calidad de acabado: <span
-                                                class="text-white font-bold">Escala 0-3</span> por 3 jueces</p>
-                                    </div>
-                                    <div class="p-3 rounded-lg border border-blue-400/20">
-                                        <p class="text-blue-400 text-xs font-bold uppercase"><i
-                                                class="fas fa-industry mr-1"></i> Validación Externa</p>
-                                        <p class="text-gray-200 text-sm">Un experto del sector productivo valida que el
-                                            reto sea <span class="text-white font-bold">real</span>, no solo académico.
+                                <p class="text-gray-300 text-sm mb-3">Hoja de cálculo de evaluación con criterios
+                                    WorldSkills:</p>
+                                <div class="space-y-4">
+                                    <!-- Measurement -->
+                                    <div
+                                        class="p-4 rounded-xl border border-neon-green/20 bg-neon-green/5 hover:bg-neon-green/10 transition-colors">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <p class="text-neon-green text-sm font-bold uppercase tracking-wider">
+                                                <i class="fas fa-ruler-combined mr-2"></i> Measurement
+                                            </p>
+                                            <span
+                                                class="text-xs text-neon-green/70 border border-neon-green/30 rounded px-2 py-0.5">Objetivo</span>
+                                        </div>
+                                        <p class="text-gray-300 text-sm mb-3 font-light">
+                                            Evaluación basada en datos cuantificables (Binario o Escala Precisa).
+                                            <strong class="text-white">Sin interpretación.</strong>
                                         </p>
+                                        <div class="space-y-2 pl-2 border-l-2 border-neon-green/20">
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-arrows-alt-h text-neon-green w-4 text-center"></i>
+                                                <span>Dimensión: <span class="text-gray-200">Corte exacto 50mm
+                                                        ±0.1mm</span></span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-stopwatch text-neon-green w-4 text-center"></i>
+                                                <span>Tiempo: <span class="text-gray-200">Proceso < 2 horas</span>
+                                                    </span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-weight-hanging text-neon-green w-4 text-center"></i>
+                                                <span>Peso: <span class="text-gray-200">Producto 500g ±5g</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Judgement -->
+                                    <div
+                                        class="p-4 rounded-xl border border-amber-gold/20 bg-amber-gold/5 hover:bg-amber-gold/10 transition-colors">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <p class="text-amber-gold text-sm font-bold uppercase tracking-wider">
+                                                <i class="fas fa-gavel mr-2"></i> Judgement
+                                            </p>
+                                            <span
+                                                class="text-xs text-amber-gold/70 border border-amber-gold/30 rounded px-2 py-0.5">Subjetivo</span>
+                                        </div>
+                                        <p class="text-gray-300 text-sm mb-3 font-light">
+                                            Evaluación por panel de expertos (3 jueces) basada en estándares de
+                                            industria. <strong class="text-white">Escala 0-3.</strong>
+                                        </p>
+                                        <div class="space-y-2 pl-2 border-l-2 border-amber-gold/20">
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-eye text-amber-gold w-4 text-center"></i>
+                                                <span>Estética: <span class="text-gray-200">Acabado superficial y
+                                                        limpieza</span></span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-hand-holding text-amber-gold w-4 text-center"></i>
+                                                <span>Manejo: <span class="text-gray-200">Fluidez y ergonomía en
+                                                        uso</span></span>
+                                            </div>
+                                            <div class="flex items-center gap-2 text-xs text-gray-400">
+                                                <i class="fas fa-brain text-amber-gold w-4 text-center"></i>
+                                                <span>Proceso: <span class="text-gray-200">Organización y
+                                                        seguridad</span></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -866,6 +846,14 @@
                         </div>
                         <p class="text-gray-200 mb-8 text-lg">El espacio físico es sagrado. Una mala distribución
                             invalida la competencia completa.</p>
+
+                        <!-- Generated Docs Links -->
+                        <div class="flex flex-wrap gap-4 mb-8">
+                            <a href="assets/generated_docs/Checklist_Jueces_Dia0.pdf" target="_blank"
+                                class="inline-flex items-center px-4 py-2 rounded-lg bg-amber-gold/10 border border-amber-gold/30 text-amber-gold hover:bg-amber-gold/20 transition-all text-sm font-bold">
+                                <i class="fas fa-clipboard-check mr-2"></i> Checklist Jueces Día 0
+                            </a>
+                        </div>
 
                         <div class="grid md:grid-cols-3 gap-6">
                             <!-- Zonificación -->
@@ -1199,6 +1187,272 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- AGENDA: CRONOGRAMA -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="agenda" class="py-20 md:py-32 relative bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full glass text-amber-gold text-sm font-medium mb-4">
+                    <i class="fas fa-calendar-alt mr-1"></i> Cronograma
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    La Ruta del <span class="text-glow text-neon-green">Competidor</span>
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Cuatro días de intensidad técnica. Desde el desembarco hasta la gloria.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- DÍA 0 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-gray-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-gray-500/20">00</span>
+                        <div class="px-3 py-1 rounded bg-gray-500/10 text-gray-400 text-xs font-bold uppercase">Día Cero
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">El Desembarco</h3>
+                    <p class="text-gray-400 text-sm mb-4">Acreditación y Calibración</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Registro de expertos y competidores</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Sorteo de puestos de trabajo</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Familiarización con equipos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 1 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-neon-green hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-neon-green/20">01</span>
+                        <div class="px-3 py-1 rounded bg-neon-green/10 text-neon-green text-xs font-bold uppercase">
+                            Inicio</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">La Fragua</h3>
+                    <p class="text-gray-400 text-sm mb-4">Módulos de Velocidad</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-play text-neon-green mt-1"></i>
+                            <span>Ceremonia de Inauguración</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-bolt text-amber-gold mt-1"></i>
+                            <span>Módulo 1: Precisión Técnica</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-clock text-blue-400 mt-1"></i>
+                            <span>Pruebas contrarreloj</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 2 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-blue-400 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-blue-400/20">02</span>
+                        <div class="px-3 py-1 rounded bg-blue-400/10 text-blue-400 text-xs font-bold uppercase">Reto
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Resistencia</h3>
+                    <p class="text-gray-400 text-sm mb-4">Resolución de Problemas</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-brain text-purple-400 mt-1"></i>
+                            <span>Módulo 2: Desafío Sorpresa</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-leaf text-neon-green mt-1"></i>
+                            <span>Módulo 3: Sostenibilidad (5%)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-lock text-red-400 mt-1"></i>
+                            <span>Cierre de evaluación ciega</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 3 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-amber-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-amber-gold/20">03</span>
+                        <div class="px-3 py-1 rounded bg-amber-gold/10 text-amber-gold text-xs font-bold uppercase">
+                            Final</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">El Veredicto</h3>
+                    <p class="text-gray-400 text-sm mb-4">Clausura y Premiación</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-bullhorn text-neon-green mt-1"></i>
+                            <span>Feedback de Expertos</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-trophy text-amber-gold mt-1"></i>
+                            <span>Ceremonia de Medallas</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-handshake text-blue-400 mt-1"></i>
+                            <span>Networking Empresarial</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- SKILLS: HABILIDADES EN COMPETENCIA -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="criterios" class="py-20 md:py-32 relative">
+        <!-- Background accent -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-neon-green/5 rounded-full blur-3xl animate-pulse-slow ani-delay-2000">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-4 py-1 rounded-full glass text-neon-green text-sm font-medium mb-4 animate-float">
+                    <i class="fas fa-tools mr-1"></i> Toolkit del Experto
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    Los <span class="text-glow text-neon-green">Criterios</span> de Evaluación
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Para construir una prueba de clase mundial, debes dominar los dos tipos de criterios.
+                    <span class="text-white font-bold">No hay subjetividad oculta.</span> Todo se mide o se juzga.
+                </p>
+            </div>
+
+            <!-- The 2 Criteria Cards -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- MEASUREMENT (M) -->
+                <div
+                    class="glass p-8 rounded-3xl border border-blue-400/30 hover:border-blue-400/60 hover:shadow-[0_0_30px_rgba(96,165,250,0.2)] transition-all duration-500 group relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -top-4 w-24 h-24 bg-blue-400/10 rounded-full blur-xl group-hover:bg-blue-400/20 transition-colors">
+                    </div>
+
+                    <div class="flex items-center justify-between mb-6">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-blue-400/10 flex items-center justify-center border border-blue-400/20 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-ruler-combined text-3xl text-blue-400"></i>
+                        </div>
+                        <span
+                            class="text-5xl font-black text-white/5 group-hover:text-blue-400/10 transition-colors">M</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-2">Medición Objetiva</h3>
+                    <p class="text-blue-400 text-xs font-bold uppercase tracking-wider mb-4">Measurement</p>
+
+                    <p class="text-gray-300 text-sm mb-6 leading-relaxed text-justify">
+                        Evaluación binaria o escalar basada en hechos verificables.
+                        <span class="text-white font-semibold">El dato manda.</span>
+                    </p>
+
+                    <div class="bg-black/20 rounded-xl p-4 border border-white/5 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+                            <span class="text-gray-400 text-xs">¿Dimensiones exactas?</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-check-circle text-blue-400 text-sm"></i>
+                            <span class="text-gray-400 text-xs">¿Funcionalidad correcta?</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JUDGMENT (J) -->
+                <div
+                    class="glass p-8 rounded-3xl border border-amber-gold/30 hover:border-amber-gold/60 hover:shadow-[0_0_30px_rgba(255,191,0,0.2)] transition-all duration-500 group relative overflow-hidden">
+                    <div
+                        class="absolute -right-4 -top-4 w-24 h-24 bg-amber-gold/10 rounded-full blur-xl group-hover:bg-amber-gold/20 transition-colors">
+                    </div>
+
+                    <div class="flex items-center justify-between mb-6">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-amber-gold/10 flex items-center justify-center border border-amber-gold/20 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-gavel text-3xl text-amber-gold"></i>
+                        </div>
+                        <span
+                            class="text-5xl font-black text-white/5 group-hover:text-amber-gold/10 transition-colors">J</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white mb-2">Juicio Subjetivo</h3>
+                    <p class="text-amber-gold text-xs font-bold uppercase tracking-wider mb-4">Judgment</p>
+
+                    <p class="text-gray-300 text-sm mb-6 leading-relaxed text-justify">
+                        Evaluación de calidad por expertos. Requiere <span
+                            class="text-white font-semibold">calibración</span>.
+                    </p>
+
+                    <div class="bg-black/20 rounded-xl p-4 border border-white/5 space-y-3">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-star text-amber-gold text-sm"></i>
+                            <span class="text-gray-400 text-xs">Estética y Acabado (0-3)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-star text-amber-gold text-sm"></i>
+                            <span class="text-gray-400 text-xs">Sabor / Textura / UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expert Tip -->
+            <div class="mt-12 text-center">
+                <div class="inline-block glass px-6 py-3 rounded-full border border-purple-500/30">
+                    <p class="text-sm text-gray-300">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+                        <span class="text-white font-bold">Pro Tip:</span> Una buena prueba usa <span
+                            class="text-purple-400">70% Medición</span> y <span class="text-amber-gold">30%
+                            Juicio</span>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-16 border-t border-white/5">
+                <div class="flex items-start gap-4 justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-amber-gold/20 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-lightbulb text-amber-gold text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-amber-gold mb-2">¿Cómo leer estas rúbricas?</h4>
+                        <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-300 text-justify max-w-3xl">
+                            <div>
+                                <p class="text-blue-400 font-bold text-xs uppercase mb-1">Medición (M)</p>
+                                <p>Criterios con respuesta correcta verificable: funciona o no funciona, el número
+                                    cuadra o no cuadra. Sin ambigüedad.</p>
+                            </div>
+                            <div>
+                                <p class="text-amber-gold font-bold text-xs uppercase mb-1">Juicio (J)</p>
+                                <p>El experto evalúa calidad usando una escala predefinida (ej. 0-1-2-3). Requiere
+                                    calibración previa entre jueces.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- APROPIACIÓN: ECOSISTEMA DEL EVENTO -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <section id="apropiacion" class="py-20 md:py-32 relative">
@@ -1218,141 +1472,166 @@
             </div>
 
             <!-- Flow Diagram SVG -->
-            <div class="glass rounded-3xl p-8 md:p-12 mb-12 overflow-x-auto">
-                <svg viewBox="0 0 1000 420" class="w-full min-w-[700px]" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="flow-green" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#39FF14" stop-opacity="0.8" />
-                            <stop offset="100%" stop-color="#10b981" stop-opacity="0.8" />
-                        </linearGradient>
-                        <linearGradient id="flow-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.8" />
-                            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.8" />
-                        </linearGradient>
-                        <linearGradient id="flow-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.8" />
-                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8" />
-                        </linearGradient>
-                        <filter id="glow-filter">
-                            <feGaussianBlur stdDeviation="3" result="blur" />
-                            <feMerge>
-                                <feMergeNode in="blur" />
-                                <feMergeNode in="SourceGraphic" />
-                            </feMerge>
-                        </filter>
-                    </defs>
+            <div class="glass rounded-3xl p-8 md:p-12 mb-12 overflow-x-auto relative group">
+                <!-- Grid Background inside container -->
+                <div class="absolute inset-0 grid-pattern opacity-30 rounded-3xl pointer-events-none"></div>
 
-                    <!-- Step 1: Convocatoria -->
-                    <rect x="20" y="30" width="180" height="70" rx="15" fill="rgba(57,255,20,0.1)" stroke="#39FF14"
-                        stroke-width="2" />
-                    <text x="110" y="60" text-anchor="middle" fill="#39FF14" font-size="12" font-weight="bold"
-                        font-family="Inter">CONVOCATORIA</text>
-                    <text x="110" y="80" text-anchor="middle" fill="#9ca3af" font-size="10"
-                        font-family="Inter">Aprendices CGAO</text>
+                <div class="min-w-[700px] relative z-10">
+                    <svg viewBox="0 0 1000 450" class="w-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#39FF14" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#22c55e" stop-opacity="0.2" />
+                            </linearGradient>
+                            <linearGradient id="neon-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#d97706" stop-opacity="0.2" />
+                            </linearGradient>
+                            <linearGradient id="neon-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.2" />
+                            </linearGradient>
+                            <filter id="glow-intense" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <filter id="glass-inset" x="-10%" y="-10%" width="120%" height="120%">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                <feColorMatrix in="blur" type="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze" />
+                                <feComposite in="SourceGraphic" in2="ooze" operator="atop" />
+                            </filter>
+                        </defs>
 
-                    <!-- Arrow 1→2 -->
-                    <line x1="200" y1="65" x2="240" y2="65" stroke="#39FF14" stroke-width="2" stroke-dasharray="5,3" />
-                    <polygon points="238,60 248,65 238,70" fill="#39FF14" />
-                    <text x="224" y="55" text-anchor="middle" fill="#6b7280" font-size="8" font-family="Inter">Filtro
-                        1</text>
+                        <!-- Connecting Lines with Animation -->
+                        <!-- Path 1: Convocatoria -> Pruebas -->
+                        <path d="M200 65 L260 65" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="255,60 265,65 255,70" fill="#39FF14" />
 
-                    <!-- Step 2: Pruebas Teóricas -->
-                    <rect x="250" y="30" width="180" height="70" rx="15" fill="rgba(96,165,250,0.1)" stroke="#60a5fa"
-                        stroke-width="2" />
-                    <text x="340" y="60" text-anchor="middle" fill="#60a5fa" font-size="12" font-weight="bold"
-                        font-family="Inter">PRUEBAS TEÓRICAS</text>
-                    <text x="340" y="80" text-anchor="middle" fill="#9ca3af" font-size="10"
-                        font-family="Inter">Evaluación Online</text>
+                        <!-- Path 2: Pruebas -> Campamento -->
+                        <path d="M420 65 L480 65" stroke="#60a5fa" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash-reverse opacity-60" />
+                        <polygon points="475,60 485,65 475,70" fill="#60a5fa" />
 
-                    <!-- Arrow 2→3 -->
-                    <line x1="430" y1="65" x2="470" y2="65" stroke="#60a5fa" stroke-width="2" stroke-dasharray="5,3" />
-                    <polygon points="468,60 478,65 468,70" fill="#60a5fa" />
-                    <text x="454" y="55" text-anchor="middle" fill="#6b7280" font-size="8" font-family="Inter">Top
-                        10%</text>
+                        <!-- Path 3: Campamento -> Evento -->
+                        <path d="M640 65 L700 65" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="695,60 705,65 695,70" fill="#FFBF00" />
 
-                    <!-- Step 3: Campamento -->
-                    <rect x="480" y="30" width="180" height="70" rx="15" fill="rgba(255,191,0,0.1)" stroke="#FFBF00"
-                        stroke-width="2" />
-                    <text x="570" y="60" text-anchor="middle" fill="#FFBF00" font-size="12" font-weight="bold"
-                        font-family="Inter">CAMPAMENTO</text>
-                    <text x="570" y="80" text-anchor="middle" fill="#9ca3af" font-size="10"
-                        font-family="Inter">Entrenamiento Intensivo</text>
+                        <!-- Path 4: Evento -> Evaluacion -->
+                        <path d="M850 130 L850 180" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,175 850,185 855,175" fill="#39FF14" />
 
-                    <!-- Arrow 3→4 -->
-                    <line x1="660" y1="65" x2="700" y2="65" stroke="#FFBF00" stroke-width="2" stroke-dasharray="5,3" />
-                    <polygon points="698,60 708,65 698,70" fill="#FFBF00" />
+                        <!-- Path 5: Evaluacion -> Certificacion -->
+                        <path d="M850 240 L850 290" stroke="#a855f7" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,285 850,295 855,285" fill="#a855f7" />
 
-                    <!-- Step 4: EL EVENTO (Main) -->
-                    <rect x="710" y="10" width="270" height="110" rx="20" fill="rgba(57,255,20,0.15)" stroke="#39FF14"
-                        stroke-width="3" filter="url(#glow-filter)" />
-                    <text x="845" y="38" text-anchor="middle" fill="#39FF14" font-size="14" font-weight="900"
-                        font-family="Inter">⚔️ LA FRAGUA DEL ORIENTE</text>
+                        <!-- Path 6: Certificacion -> WorldSkills -->
+                        <path d="M850 350 L850 390" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,385 850,395 855,385" fill="#FFBF00" />
 
-                    <!-- Module boxes inside event -->
-                    <rect x="725" y="50" width="75" height="55" rx="8" fill="rgba(57,255,20,0.1)" stroke="#39FF14"
-                        stroke-width="1" />
-                    <text x="762" y="72" text-anchor="middle" fill="#39FF14" font-size="9" font-weight="bold"
-                        font-family="Inter">Precisión</text>
-                    <text x="762" y="92" text-anchor="middle" fill="#9ca3af" font-size="8" font-family="Inter">y
-                        Velocidad</text>
+                        <!-- Nodes -->
+                        <!-- 1. Convocatoria -->
+                        <g transform="translate(20, 30)">
+                            <rect width="180" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="url(#neon-green)"
+                                stroke-width="2" filter="url(#glow-intense)" />
+                            <rect width="180" height="70" rx="12" fill="url(#neon-green)" class="opacity-10" />
+                            <text x="90" y="30" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="800" font-size="14">CONVOCATORIA</text>
+                            <text x="90" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Aprendices CGAO</text>
+                        </g>
 
-                    <rect x="808" y="50" width="75" height="55" rx="8" fill="rgba(255,191,0,0.1)" stroke="#FFBF00"
-                        stroke-width="1" />
-                    <text x="845" y="72" text-anchor="middle" fill="#FFBF00" font-size="9" font-weight="bold"
-                        font-family="Inter">Resolución</text>
-                    <text x="845" y="92" text-anchor="middle" fill="#9ca3af" font-size="8"
-                        font-family="Inter">Problemas</text>
+                        <!-- 2. Pruebas Teóricas -->
+                        <g transform="translate(260, 30)">
+                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#60a5fa"
+                                stroke-width="2" />
+                            <text x="80" y="30" text-anchor="middle" fill="#60a5fa" font-family="Inter"
+                                font-weight="700" font-size="13">PRUEBAS ONLINE</text>
+                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Filtro Técnico</text>
+                        </g>
 
-                    <rect x="891" y="50" width="75" height="55" rx="8" fill="rgba(96,165,250,0.1)" stroke="#60a5fa"
-                        stroke-width="1" />
-                    <text x="928" y="72" text-anchor="middle" fill="#60a5fa" font-size="9" font-weight="bold"
-                        font-family="Inter">Innovación</text>
-                    <text x="928" y="92" text-anchor="middle" fill="#9ca3af" font-size="8"
-                        font-family="Inter">Sostenible</text>
+                        <!-- 3. Campamento -->
+                        <g transform="translate(480, 30)">
+                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#FFBF00"
+                                stroke-width="2" />
+                            <text x="80" y="30" text-anchor="middle" fill="#FFBF00" font-family="Inter"
+                                font-weight="700" font-size="13">CAMPAMENTO</text>
+                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Entrenamiento Intensivo</text>
+                        </g>
 
-                    <!-- Arrow down from Event -->
-                    <line x1="845" y1="120" x2="845" y2="160" stroke="#39FF14" stroke-width="2"
-                        stroke-dasharray="5,3" />
-                    <polygon points="840,158 845,168 850,158" fill="#39FF14" />
+                        <!-- 4. EL EVENTO (Centerpiece) -->
+                        <g transform="translate(710, 10)">
+                            <rect width="280" height="120" rx="20" fill="rgba(10, 10, 15, 0.9)" stroke="#39FF14"
+                                stroke-width="3" filter="url(#glow-intense)" />
 
-                    <!-- Step 5: Evaluación por Pares -->
-                    <rect x="710" y="170" width="270" height="60" rx="15" fill="rgba(168,85,247,0.1)" stroke="#a855f7"
-                        stroke-width="2" />
-                    <text x="845" y="200" text-anchor="middle" fill="#a855f7" font-size="12" font-weight="bold"
-                        font-family="Inter">📋 EVALUACIÓN POR PARES EXTERNOS</text>
-                    <text x="845" y="218" text-anchor="middle" fill="#9ca3af" font-size="10" font-family="Inter">Jueces
-                        Independientes</text>
+                            <!-- Header -->
+                            <rect x="0" y="0" width="280" height="40" rx="20" fill="rgba(57, 255, 20, 0.1)" />
+                            <text x="140" y="28" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="900" font-size="16" letter-spacing="1">LA FRAGUA</text>
 
-                    <!-- Arrow down -->
-                    <line x1="845" y1="230" x2="845" y2="260" stroke="#a855f7" stroke-width="2"
-                        stroke-dasharray="5,3" />
-                    <polygon points="840,258 845,268 850,258" fill="#a855f7" />
+                            <!-- Internal Modules -->
+                            <g transform="translate(15, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(57,255,20,0.05)" stroke="#39FF14"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Precisión</text>
+                            </g>
+                            <g transform="translate(102.5, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(255,191,0,0.05)" stroke="#FFBF00"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Resolución</text>
+                            </g>
+                            <g transform="translate(190, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(96,165,250,0.05)" stroke="#60a5fa"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Innovación</text>
+                            </g>
+                        </g>
 
-                    <!-- Step 6: Certificación -->
-                    <rect x="710" y="270" width="270" height="60" rx="15" fill="rgba(57,255,20,0.1)" stroke="#39FF14"
-                        stroke-width="2" />
-                    <text x="845" y="300" text-anchor="middle" fill="#39FF14" font-size="12" font-weight="bold"
-                        font-family="Inter">🏅 CERTIFICACIÓN DE EXCELENCIA</text>
-                    <text x="845" y="318" text-anchor="middle" fill="#9ca3af" font-size="10"
-                        font-family="Inter">Validación de Competencias</text>
+                        <!-- 5. Evaluación Pares -->
+                        <g transform="translate(710, 180)">
+                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#a855f7"
+                                stroke-width="1.5" />
+                            <text x="140" y="35" text-anchor="middle" fill="#a855f7" font-family="Inter"
+                                font-weight="600" font-size="13">EVALUACIÓN EXTERNA (Jueces)</text>
+                        </g>
 
-                    <!-- Arrow down -->
-                    <line x1="845" y1="330" x2="845" y2="360" stroke="#39FF14" stroke-width="2"
-                        stroke-dasharray="5,3" />
-                    <polygon points="840,358 845,368 850,358" fill="#39FF14" />
+                        <!-- 6. Certificación -->
+                        <g transform="translate(710, 290)">
+                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#39FF14"
+                                stroke-width="1.5" />
+                            <text x="140" y="25" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="800" font-size="13">CERTIFICACIÓN</text>
+                            <text x="140" y="45" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                map="11">Excelencia Laboral</text>
+                        </g>
 
-                    <!-- Step 7: WorldSkills -->
-                    <rect x="710" y="370" width="270" height="50" rx="15" fill="rgba(255,150,0,0.15)" stroke="#ff9600"
-                        stroke-width="2" filter="url(#glow-filter)" />
-                    <text x="845" y="400" text-anchor="middle" fill="#ff9600" font-size="13" font-weight="900"
-                        font-family="Inter">🌍 WORLDSKILLS REGIONAL</text>
+                        <!-- 7. WorldSkills -->
+                        <g transform="translate(710, 390)">
+                            <rect width="280" height="50" rx="12" fill="url(#neon-gold)" stroke="#FFBF00"
+                                stroke-width="2" filter="url(#glow-intense)" />
+                            <text x="140" y="32" text-anchor="middle" fill="#000" font-family="Inter" font-weight="900"
+                                font-size="14" letter-spacing="1">WORLDSKILLS REGIONAL</text>
+                        </g>
 
-                    <!-- Left side decorative text -->
-                    <text x="110" y="180" text-anchor="middle" fill="#374151" font-size="50" font-weight="900"
-                        font-family="Inter" opacity="0.15">FLOW</text>
-                    <text x="340" y="280" text-anchor="middle" fill="#374151" font-size="50" font-weight="900"
-                        font-family="Inter" opacity="0.15">CGAO</text>
-                </svg>
+                        <!-- Decorative 'FLOW' Text -->
+                        <text x="100" y="300" font-family="Inter" font-weight="900" font-size="120"
+                            fill="rgba(255,255,255,0.03)" class="pe-none">FLOW</text>
+
+                    </svg>
+                </div>
             </div>
 
             <!-- 3 Module Cards -->
@@ -1421,10 +1700,10 @@
                             <i class="fas fa-eye text-slate-950 text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Visibilidad</h3>
-                        <p class="text-gray-200 leading-relaxed">
+                        <p class="text-gray-200 leading-relaxed text-justify">
                             Posicionamiento de <span class="text-neon-green font-semibold">Vélez</span> no solo como
                             capital folclórica,
-                            sino como <span class="text-amber-gold font-semibold">hub tecnológico</span> del nororiente
+                            sino como <span class="text-amber-gold font-semibold">hub tecnológico</span> del oriente
                             colombiano.
                             Una marca que trasciende lo local.
                         </p>
@@ -1443,7 +1722,7 @@
                             <i class="fas fa-graduation-cap text-slate-950 text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Calidad Formativa</h3>
-                        <p class="text-gray-200 leading-relaxed">
+                        <p class="text-gray-200 leading-relaxed text-justify">
                             Los instructores deberán <span class="text-amber-gold font-semibold">actualizar sus
                                 currículos</span> para
                             preparar a los aprendices para la competencia. Elevación orgánica del estándar académico.
@@ -1463,7 +1742,7 @@
                             <i class="fas fa-handshake text-slate-950 text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-4">Alianzas</h3>
-                        <p class="text-gray-200 leading-relaxed">
+                        <p class="text-gray-200 leading-relaxed text-justify">
                             Las <span class="text-blue-400 font-semibold">empresas locales</span> (fábricas de
                             bocadillo, cooperativas)
                             podrán patrocinar los desafíos, validando que los aprendices resuelven
@@ -1555,285 +1834,410 @@
 
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- CRITERIOS DE EVALUACIÓN: GUÍA PARA EXPERTOS -->
+    <!-- CRITERIOS DE EVALUACIÓN: GUÍA COMPLETA PARA EXPERTOS -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="criterios-evaluacion" class="py-20 md:py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- BLUEPRINTS: EL TALLER (TOOLKIT PART 2) -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="blueprints" class="py-20 md:py-32 relative bg-slate-900 border-t border-white/5 overflow-hidden">
+        <!-- Blueprint Grid Pattern -->
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950/80"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Header -->
             <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 rounded-full glass text-blue-400 text-sm font-medium mb-4">
-                    <i class="fas fa-balance-scale mr-1"></i> Estándares Técnicos
+                <span
+                    class="inline-block px-4 py-1 rounded-full border border-blue-500/30 bg-blue-500/5 text-blue-400 text-sm font-mono tracking-wider mb-4">
+                    <i class="fas fa-layer-group mr-2"></i>TOOLKIT_PART_02
                 </span>
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">
-                    Criterios de <span class="text-glow text-neon-green">Evaluación</span>
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight text-white">
+                    PLANOS DE <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">CONSTRUCCIÓN</span>
                 </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Metodología WorldSkills aplicada: Distinción crítica entre <span
-                        class="text-white font-semibold">Medición Objetiva</span> y <span
-                        class="text-white font-semibold">Juicio Experto</span>.
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+                    La teoría es inútil sin aplicación. Aquí tienes los <span class="text-blue-300 font-medium">4 planos
+                        maestros</span> (Blueprints) que definen el estándar técnico de cada competencia.
                 </p>
             </div>
 
-            <!-- Definición de Tipos -->
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <!-- Medición (Measurement) -->
-                <div class="glass p-8 rounded-3xl border border-white/10 hover:border-neon-green/30 transition-colors">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-neon-green/20 flex items-center justify-center">
-                            <i class="fas fa-ruler-combined text-neon-green text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Criterio de Medición</h3>
-                            <p class="text-neon-green text-sm font-semibold">MEASUREMENT (Objetivo)</p>
+            <!-- Blueprint Legend (Compact) -->
+            <div class="mb-16 border-y border-white/5 py-8 bg-white/2">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold font-mono text-sm border border-blue-500/30">M</span>
+                        <div class="text-left">
+                            <p class="text-white text-xs font-bold uppercase tracking-wider">Medición</p>
+                            <p class="text-gray-500 text-[10px]">Objetivo (0-3 pts)</p>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-4">
-                        Evaluación binaria (Sí/No) o basada en valores exactos. No admite interpretación.
-                        Se utiliza para verificar especificaciones técnicas, dimensiones, tiempos o funcionamiento.
-                    </p>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-neon-green"></i> ¿Cumple la
-                            dimensión exacta?</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-neon-green"></i> ¿El sistema
-                            arranca en < 5s?</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-neon-green"></i> ¿El peso es
-                            correcto (±1g)?</li>
-                    </ul>
-                </div>
-
-                <!-- Juicio (Judgment) -->
-                <div class="glass p-8 rounded-3xl border border-white/10 hover:border-amber-gold/30 transition-colors">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 rounded-xl bg-amber-gold/20 flex items-center justify-center">
-                            <i class="fas fa-gavel text-amber-gold text-2xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-white">Criterio de Juicio</h3>
-                            <p class="text-amber-gold text-sm font-semibold">JUDGMENT (Subjetivo Experto)</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">
-                        Valoración cualitativa realizada por un panel de 3 expertos. Se utiliza para evaluar
-                        aspectos estéticos, de sabor, experiencia de usuario o calidad de acabado.
-                    </p>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li class="flex items-center gap-2"><i class="fas fa-star text-amber-gold"></i> Escala: 0 (No
-                            realizado) a 3 (Excelencia)</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-star text-amber-gold"></i> Requiere
-                            calibración previa de jueces</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-star text-amber-gold"></i> El puntaje es el
-                            promedio del panel</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Ejemplos Prácticos -->
-            <div class="space-y-8">
-                <!-- Ejemplo Agroindustria -->
-                <div class="glass p-8 rounded-3xl border-l-4 border-neon-green">
-                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                        <i class="fas fa-coffee text-neon-green"></i> Ejemplo: Barismo / Cata de Café
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos
-                                de Medición</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Temperatura del espresso</span>
-                                    <span class="text-neon-green font-mono text-sm">65°C - 70°C</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Tiempo de extracción</span>
-                                    <span class="text-neon-green font-mono text-sm">20s - 30s</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Volumen en taza</span>
-                                    <span class="text-neon-green font-mono text-sm">25ml - 35ml</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos
-                                de Juicio</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Balance de sabor</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Textura de la crema</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Creatividad en presentación</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ejemplo Software -->
-                <div class="glass p-8 rounded-3xl border-l-4 border-blue-400">
-                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                        <i class="fas fa-laptop-code text-blue-400"></i> Ejemplo: Desarrollo de Software
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos
-                                de Medición</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Funcionalidad (Login)</span>
-                                    <span class="text-neon-green font-mono text-sm">SI / NO</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Validación de formularios</span>
-                                    <span class="text-neon-green font-mono text-sm">SI / NO</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Conexión a Base de Datos</span>
-                                    <span class="text-neon-green font-mono text-sm">SI / NO</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos
-                                de Juicio</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Diseño de Interfaz (UI)</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Experiencia de Usuario (UX)</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                                <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                    <span class="text-gray-300">Limpieza de Código</span>
-                                    <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0
-                                        - 3 PTOS</span>
-                                </div>
-                            </div>
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="w-8 h-8 rounded bg-amber-500/20 flex items-center justify-center text-amber-500 font-bold font-mono text-sm border border-amber-500/30">J</span>
+                        <div class="text-left">
+                            <p class="text-white text-xs font-bold uppercase tracking-wider">Juicio</p>
+                            <p class="text-gray-500 text-[10px]">Subjetivo (0-3 pts)</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Ejemplo Contabilidad -->
-            <div class="glass p-8 rounded-3xl border-l-4 border-amber-gold">
-                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <i class="fas fa-calculator text-amber-gold"></i> Ejemplo: Contabilidad y Finanzas
+            <!-- ════════════════════════════════════════════ -->
+            <!-- BLUEPRINT GRID: ESTÁNDARES TÉCNICOS -->
+            <!-- ════════════════════════════════════════════ -->
+            <div class="grid md:grid-cols-2 gap-6 mb-24">
+
+                <!-- Blueprint 1: Software -->
+                <div
+                    class="group relative glass rounded-xl overflow-hidden border border-blue-500/20 hover:border-blue-400/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] transform hover:-translate-y-1">
+                    <!-- Background Grid -->
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:16px_16px]">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 group-hover:rotate-12 transform">
+                        <i class="fas fa-drafting-compass text-6xl text-blue-500/10 -rotate-12"></i>
+                    </div>
+
+                    <div class="relative p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span
+                                    class="text-blue-400 font-mono text-xs tracking-widest uppercase border border-blue-500/30 px-2 py-0.5 rounded bg-blue-500/5">Blueprint_01</span>
+                                <h4 class="text-xl font-bold text-white mt-3">Software Development</h4>
+                                <p class="text-gray-400 text-sm font-mono mt-1">SKILL #09 • Cloud & DevOps</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20 group-hover:border-blue-400/50 group-hover:bg-blue-500/20 transition-all">
+                                <i class="fas fa-code text-blue-400 text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 font-mono text-sm">
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Funcionalidad CRUD Completa</span>
+                                <span class="text-white font-bold">3 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Despliegue AWS/Azure</span>
+                                <span class="text-white font-bold">2 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-amber-500/5 border border-amber-500/10 hover:bg-amber-500/10 transition-colors">
+                                <span
+                                    class="text-amber-500 font-bold w-6 text-center border-r border-amber-500/20 pr-2">J</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Experiencia de Usuario (UX)</span>
+                                <span class="text-white font-bold">3 pts</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                            <span class="text-gray-500 text-xs text-right font-mono">Peso Total: 30%</span>
+                            <div class="h-1.5 flex-1 mx-4 bg-white/5 rounded-full overflow-hidden">
+                                <div
+                                    class="h-full bg-blue-500 animate-fill-bar shadow-[0_0_10px_rgba(59,130,246,0.5)] w-75-pct">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blueprint 2: Agro -->
+                <div
+                    class="group relative glass rounded-xl overflow-hidden border border-neon-green/20 hover:border-neon-green/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(57,255,20,0.15)] transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:16px_16px]">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 group-hover:rotate-12 transform">
+                        <i class="fas fa-leaf text-6xl text-neon-green/10 -rotate-12"></i>
+                    </div>
+
+                    <div class="relative p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span
+                                    class="text-neon-green font-mono text-xs tracking-widest uppercase border border-neon-green/30 px-2 py-0.5 rounded bg-neon-green/5">Blueprint_02</span>
+                                <h4 class="text-xl font-bold text-white mt-3">Agroempresarial</h4>
+                                <p class="text-gray-400 text-sm font-mono mt-1">SKILL #30 • Plan de Cultivo</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-neon-green/10 flex items-center justify-center border border-neon-green/20 group-hover:border-neon-green/50 group-hover:bg-neon-green/20 transition-all">
+                                <i class="fas fa-tractor text-neon-green text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 font-mono text-sm">
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Cálculo Dosis Fertilizante</span>
+                                <span class="text-white font-bold">3 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Densidad de Siembra (m²)</span>
+                                <span class="text-white font-bold">2 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-amber-500/5 border border-amber-500/10 hover:bg-amber-500/10 transition-colors">
+                                <span
+                                    class="text-amber-500 font-bold w-6 text-center border-r border-amber-500/20 pr-2">J</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Estrategia de Mercado</span>
+                                <span class="text-white font-bold">3 pts</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                            <span class="text-gray-500 text-xs text-right font-mono">Peso Total: 30%</span>
+                            <div class="h-1.5 flex-1 mx-4 bg-white/5 rounded-full overflow-hidden">
+                                <div
+                                    class="h-full bg-neon-green animate-fill-bar shadow-[0_0_10px_rgba(57,255,20,0.5)] w-30-pct">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blueprint 3: Finanzas -->
+                <div
+                    class="group relative glass rounded-xl overflow-hidden border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,0.15)] transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:16px_16px]">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 group-hover:rotate-12 transform">
+                        <i class="fas fa-chart-pie text-6xl text-amber-500/10 -rotate-12"></i>
+                    </div>
+
+                    <div class="relative p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span
+                                    class="text-amber-500 font-mono text-xs tracking-widest uppercase border border-amber-500/30 px-2 py-0.5 rounded bg-amber-500/5">Blueprint_03</span>
+                                <h4 class="text-xl font-bold text-white mt-3">Finanzas</h4>
+                                <p class="text-gray-400 text-sm font-mono mt-1">SKILL #34 • Balance General</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/20 group-hover:border-amber-500/50 group-hover:bg-amber-500/20 transition-all">
+                                <i class="fas fa-coins text-amber-500 text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 font-mono text-sm">
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Asientos Contables</span>
+                                <span class="text-white font-bold">8 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Cumplimiento NIIF</span>
+                                <span class="text-white font-bold">2 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-amber-500/5 border border-amber-500/10 hover:bg-amber-500/10 transition-colors">
+                                <span
+                                    class="text-amber-500 font-bold w-6 text-center border-r border-amber-500/20 pr-2">J</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Informe de Auditoría</span>
+                                <span class="text-white font-bold">1.5 pts</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                            <span class="text-gray-500 text-xs text-right font-mono">Peso Total: 25%</span>
+                            <div class="h-1.5 flex-1 mx-4 bg-white/5 rounded-full overflow-hidden">
+                                <div
+                                    class="h-full bg-amber-500 animate-fill-bar shadow-[0_0_10px_rgba(245,158,11,0.5)] w-66-pct">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blueprint 4: Música -->
+                <div
+                    class="group relative glass rounded-xl overflow-hidden border border-purple-500/20 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] transform hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:16px_16px]">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 p-4 opacity-30 group-hover:opacity-50 transition-opacity duration-500 group-hover:rotate-12 transform">
+                        <i class="fas fa-headphones text-6xl text-purple-500/10 -rotate-12"></i>
+                    </div>
+
+                    <div class="relative p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span
+                                    class="text-purple-500 font-mono text-xs tracking-widest uppercase border border-purple-500/30 px-2 py-0.5 rounded bg-purple-500/5">Blueprint_04</span>
+                                <h4 class="text-xl font-bold text-white mt-3">Producción Musical</h4>
+                                <p class="text-gray-400 text-sm font-mono mt-1">SKILL #62 • Track 3 min</p>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center border border-purple-500/20 group-hover:border-purple-500/50 group-hover:bg-purple-500/20 transition-all">
+                                <i class="fas fa-wave-square text-purple-500 text-lg"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4 font-mono text-sm">
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Rango Dinámico (DR8-12)</span>
+                                <span class="text-white font-bold">2 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-blue-500/5 border border-blue-500/10 hover:bg-blue-500/10 transition-colors">
+                                <span
+                                    class="text-blue-400 font-bold w-6 text-center border-r border-blue-500/20 pr-2">M</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Master LUFS (-14 ±1)</span>
+                                <span class="text-white font-bold">1 pts</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-2 rounded bg-amber-500/5 border border-amber-500/10 hover:bg-amber-500/10 transition-colors">
+                                <span
+                                    class="text-amber-500 font-bold w-6 text-center border-r border-amber-500/20 pr-2">J</span>
+                                <span class="text-gray-300 flex-1 truncate pl-1">Coherencia Estética</span>
+                                <span class="text-white font-bold">3 pts</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t border-white/5 flex justify-between items-center">
+                            <span class="text-gray-500 text-xs text-right font-mono">Peso Total: 35%</span>
+                            <div class="h-1.5 flex-1 mx-4 bg-white/5 rounded-full overflow-hidden">
+                                <div
+                                    class="h-full bg-purple-500 animate-fill-bar shadow-[0_0_10px_rgba(168,85,247,0.5)] w-80-pct">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ════════════════════════════════════════════ -->
+            <!-- PROTOCOLO: LA FRAGUA (CALIBRATION) -->
+            <!-- ════════════════════════════════════════════ -->
+            <div class="glass rounded-3xl p-8 md:p-12 border border-white/10 mb-12 relative overflow-hidden group">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mb-8 text-center relative z-10">
+                    <i class="fas fa-sync-alt text-purple-400 mr-2 animate-spin-slow"></i> Protocolo de Calibración
                 </h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos de
-                            Medición</h4>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Balance General Cuadrado</span>
-                                <span class="text-neon-green font-mono text-sm">SI / NO</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Cálculo Retención Fuente</span>
-                                <span class="text-neon-green font-mono text-sm">Valor Exacto</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Errores Ortográficos Informe</span>
-                                <span class="text-neon-green font-mono text-sm">0 errores</span>
-                            </div>
+
+                <div
+                    class="grid md:grid-cols-4 gap-8 relative z-10 overflow-x-auto pb-4 md:overflow-visible md:pb-0 flex-nowrap md:flex-wrap snap-x snap-mandatory md:snap-none">
+                    <!-- Step 01 -->
+                    <div class="text-center min-w-[200px] md:min-w-0 snap-center group">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-slate-800 flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-lg shadow-purple-900/20 group-hover:scale-110 group-hover:border-purple-400/50 transition-all duration-300">
+                            <i class="fas fa-eye text-purple-400 text-2xl group-hover:text-white transition-colors"></i>
                         </div>
+                        <h4 class="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors">01. Lectura
+                            Ciega</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+                            Lectura individual de la rúbrica sin discutir. Interpretación personal del estándar.</p>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos de
-                            Juicio</h4>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Análisis Financiero</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Ética y Transparencia</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Presentación Verbal</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
+                    <!-- Step 02 -->
+                    <div class="text-center min-w-[200px] md:min-w-0 snap-center group">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-slate-800 flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-lg shadow-purple-900/20 group-hover:scale-110 group-hover:border-purple-400/50 transition-all duration-300">
+                            <i
+                                class="fas fa-flask text-purple-400 text-2xl group-hover:text-white transition-colors"></i>
                         </div>
+                        <h4 class="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors">02. Prueba
+                            Piloto</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+                            Evaluación de un proyecto muestra (ficticio) para detectar discrepancias.</p>
+                    </div>
+                    <!-- Step 03 -->
+                    <div class="text-center min-w-[200px] md:min-w-0 snap-center group">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-slate-800 flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-lg shadow-purple-900/20 group-hover:scale-110 group-hover:border-purple-400/50 transition-all duration-300">
+                            <i
+                                class="fas fa-comments text-purple-400 text-2xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors">03. Debate
+                            Técnico</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+                            Discusión de diferencias > 1 punto. Ajuste de criterio, no de nota.</p>
+                    </div>
+                    <!-- Step 04 -->
+                    <div class="text-center min-w-[200px] md:min-w-0 snap-center group">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-slate-800 flex items-center justify-center mx-auto mb-4 border border-white/10 shadow-lg shadow-purple-900/20 group-hover:scale-110 group-hover:border-purple-400/50 transition-all duration-300">
+                            <i
+                                class="fas fa-file-signature text-purple-400 text-2xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h4 class="text-white font-bold mb-2 group-hover:text-purple-400 transition-colors">04. Firma de
+                            Acta</h4>
+                        <p class="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">
+                            Consenso oficial. La vara de medir queda fijada por escrito.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Ejemplo Pecuaria -->
-            <div class="glass p-8 rounded-3xl border-l-4 border-neon-green">
-                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                    <i class="fas fa-paw text-neon-green"></i> Ejemplo: Especies Menores (Pecuaria)
-                </h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos de
-                            Medición</h4>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Dosis Medicamento</span>
-                                <span class="text-neon-green font-mono text-sm">ml exactos</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Tiempo Quirúrgico</span>
-                                <span class="text-neon-green font-mono text-sm">
-                                    < 20 min</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Temp. Post-procedimiento</span>
-                                <span class="text-neon-green font-mono text-sm">38°C - 39°C</span>
-                            </div>
-                        </div>
+            <!-- DESCARGAS: RECURSOS DEL EXPERTO -->
+            <!-- ════════════════════════════════════════════ -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="assets/generated_docs/Guia_Tecnica_Diseno_Prueba.pdf" download
+                    class="group px-6 py-4 rounded-xl bg-slate-800 border border-white/10 hover:border-blue-500/50 hover:bg-slate-800/80 transition-all flex items-center gap-4">
+                    <div class="w-10 h-10 rounded bg-blue-500/20 flex items-center justify-center text-blue-400">
+                        <i class="fas fa-file-pdf text-xl"></i>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-gray-200 mb-3 border-b border-white/10 pb-2">Aspectos de
-                            Juicio</h4>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Manejo y Bienestar Animal</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Orden y Limpieza</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
-                            <div class="flex justify-between items-center bg-white/5 p-3 rounded-lg">
-                                <span class="text-gray-300">Destreza Manual</span>
-                                <span class="text-amber-gold text-xs font-bold px-2 py-1 rounded bg-amber-gold/10">0 - 3
-                                    PTOS</span>
-                            </div>
-                        </div>
+                    <div class="text-left">
+                        <p class="text-white font-bold text-sm group-hover:text-blue-400 transition-colors">Guía
+                            Técnica.pdf</p>
+                        <p class="text-gray-500 text-xs">Estándar V.2.4 • PDF</p>
                     </div>
-                </div>
+                </a>
+                <a href="assets/generated_docs/Rubrica_Maestra_Template.pdf" download
+                    class="group px-6 py-4 rounded-xl bg-slate-800 border border-white/10 hover:border-green-500/50 hover:bg-slate-800/80 transition-all flex items-center gap-4">
+                    <div class="w-10 h-10 rounded bg-green-500/20 flex items-center justify-center text-green-400">
+                        <i class="fas fa-file-pdf text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-white font-bold text-sm group-hover:text-green-400 transition-colors">Rúbrica
+                            Maestra.pdf</p>
+                        <p class="text-gray-500 text-xs">Calculadora Auto • PDF</p>
+                    </div>
+                </a>
+                <a href="assets/generated_docs/Checklist_Jueces_Dia0.pdf" download
+                    class="group px-6 py-4 rounded-xl bg-slate-800 border border-white/10 hover:border-amber-500/50 hover:bg-slate-800/80 transition-all flex items-center gap-4">
+                    <div class="w-10 h-10 rounded bg-amber-500/20 flex items-center justify-center text-amber-500">
+                        <i class="fas fa-file-pdf text-xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-white font-bold text-sm group-hover:text-amber-500 transition-colors">Checklist
+                            Jueces.pdf</p>
+                        <p class="text-gray-500 text-xs">Protocolo Día 0 • PDF</p>
+                    </div>
+                </a>
             </div>
-        </div>
 
-        <div class="mt-12 text-center">
-            <button
-                class="px-8 py-3 rounded-xl border border-white/20 hover:bg-white/5 text-gray-300 hover:text-white transition-all group">
-                <i class="fas fa-download mr-2 group-hover:text-neon-green"></i>
-                Descargar Ficha Técnica de Prueba (Modelo)
-            </button>
-        </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- RESULTADOS: CASO DE ÉXITO EMULADO -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <section id="resultados" class="py-20 md:py-32 relative overflow-hidden">
@@ -1853,11 +2257,21 @@
 
             <!-- Dashboard de Resultados -->
             <div class="glass rounded-3xl p-6 md:p-10 border border-white/10 relative overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
+                <div class="absolute top-4 right-6 flex items-center gap-2">
+                    <span class="relative flex h-3 w-3">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-neon-green"></span>
+                    </span>
+                    <span class="text-xs text-neon-green font-mono uppercase tracking-widest">En Vivo</span>
+                </div>
+
+                <div class="overflow-x-auto mt-6">
+                    <table class="w-full text-left border-collapse min-w-[600px]">
                         <thead>
-                            <tr class="border-b border-white/10">
-                                <th class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider">
+                            <tr class="border-b border-white/10 bg-white/5">
+                                <th
+                                    class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider rounded-tl-lg">
                                     Competidor</th>
                                 <th class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider">
                                     Programa</th>
@@ -1867,69 +2281,17 @@
                                     Innovación (%)</th>
                                 <th class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider">Total
                                 </th>
-                                <th class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider">Rango
+                                <th
+                                    class="py-4 px-4 text-gray-400 font-medium uppercase text-xs tracking-wider rounded-tr-lg">
+                                    Rango
                                 </th>
                             </tr>
                         </thead>
-                        <tbody class="text-gray-200">
-                            <tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
-                                <td class="py-5 px-4 font-bold text-white">Juan Camilo R.</td>
-                                <td class="py-5 px-4 text-sm">Gestión Agroempresarial</td>
-                                <td class="py-5 px-4">
-                                    <div class="flex items-center gap-2">
-                                        <div class="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
-                                            <div class="h-full bg-neon-green tbl-w-95"></div>
-                                        </div>
-                                        <span>95</span>
-                                    </div>
-                                </td>
-                                <td class="py-5 px-4 text-neon-green">98</td>
-                                <td class="py-5 px-4 font-extrabold text-neon-green">96.5</td>
-                                <td class="py-5 px-4">
-                                    <span
-                                        class="px-3 py-1 rounded-full bg-amber-gold/20 text-amber-gold text-xs font-bold border border-amber-gold/30">
-                                        🥇 ORO
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
-                                <td class="py-5 px-4 font-bold text-white">María Paula V.</td>
-                                <td class="py-5 px-4 text-sm">Sistemas</td>
-                                <td class="py-5 px-4">
-                                    <div class="flex items-center gap-2">
-                                        <div class="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
-                                            <div class="h-full bg-blue-400 tbl-w-92"></div>
-                                        </div>
-                                        <span>92</span>
-                                    </div>
-                                </td>
-                                <td class="py-5 px-4 text-blue-400">90</td>
-                                <td class="py-5 px-4 font-extrabold text-blue-400">91.0</td>
-                                <td class="py-5 px-4">
-                                    <span
-                                        class="px-3 py-1 rounded-full bg-gray-400/20 text-gray-400 text-xs font-bold border border-gray-400/30">
-                                        🥈 PLATA
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr class="border-b border-white/5 hover:bg-white/5 transition-colors group">
-                                <td class="py-5 px-4 font-bold text-white">Andrés Felipe D.</td>
-                                <td class="py-5 px-4 text-sm">Escuelas de Música</td>
-                                <td class="py-5 px-4">
-                                    <div class="flex items-center gap-2">
-                                        <div class="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
-                                            <div class="h-full bg-purple-400 tbl-w-88"></div>
-                                        </div>
-                                        <span>88</span>
-                                    </div>
-                                </td>
-                                <td class="py-5 px-4 text-purple-400">94</td>
-                                <td class="py-5 px-4 font-extrabold text-purple-400">91.0</td>
-                                <td class="py-5 px-4">
-                                    <span
-                                        class="px-3 py-1 rounded-full bg-orange-700/20 text-orange-400 text-xs font-bold border border-orange-700/30">
-                                        🥉 BRONCE
-                                    </span>
+                        <tbody id="results-table-body" class="text-gray-200">
+                            <!-- Loading State / Fallback -->
+                            <tr>
+                                <td colspan="6" class="py-8 text-center text-gray-500">
+                                    <i class="fas fa-circle-notch fa-spin mr-2"></i> Cargando resultados en vivo...
                                 </td>
                             </tr>
                         </tbody>
@@ -2044,64 +2406,156 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- FOOTER -->
+    <!-- ALIADOS E INSTITUCIONAL -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <footer class="py-12 border-t border-white/10">
+    <section id="aliados" class="py-20 bg-slate-950 relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 items-center">
-                <!-- Logos -->
-                <div class="flex items-center justify-center md:justify-start gap-6">
-                    <!-- SENA Logo SVG -->
-                    <svg viewBox="0 0 100 40" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
-                        <rect x="5" y="5" width="90" height="30" rx="5" fill="none" stroke="#39FF14" stroke-width="2" />
-                        <text x="50" y="26" text-anchor="middle" fill="#39FF14" font-size="14" font-weight="bold"
-                            font-family="Inter">SENA</text>
-                    </svg>
-                    <!-- CGAO Logo SVG -->
-                    <svg viewBox="0 0 100 40" class="h-12 opacity-70 hover:opacity-100 transition-opacity">
-                        <rect x="5" y="5" width="90" height="30" rx="5" fill="none" stroke="#FFBF00" stroke-width="2" />
-                        <text x="50" y="26" text-anchor="middle" fill="#FFBF00" font-size="14" font-weight="bold"
-                            font-family="Inter">CGAO</text>
-                    </svg>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold text-gray-400 uppercase tracking-widest">Respaldo Institucional</h2>
+            </div>
+
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- SENA -->
+                <div class="group text-center">
+                    <div
+                        class="h-20 w-20 mx-auto bg-white rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform p-2 overflow-hidden">
+                        <img src="assets/svg/logo_sena.svg" alt="Logotipo SENA" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-xs text-gray-500 font-mono hidden group-hover:block animate-fade-in">Entidad
+                        Oficial</span>
                 </div>
 
-                <!-- Social Links -->
-                <div class="flex items-center justify-center gap-4">
-                    <a href="#" aria-label="Facebook CGAO" title="Facebook"
-                        class="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-300 hover:text-neon-green hover:border-neon-green/50 transition-all">
-                        <i class="fab fa-facebook-f text-lg"></i>
-                    </a>
-                    <a href="#" aria-label="Instagram CGAO" title="Instagram"
-                        class="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-300 hover:text-neon-green hover:border-neon-green/50 transition-all">
-                        <i class="fab fa-instagram text-lg"></i>
-                    </a>
-                    <a href="#" aria-label="YouTube CGAO" title="YouTube"
-                        class="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-300 hover:text-neon-green hover:border-neon-green/50 transition-all">
-                        <i class="fab fa-youtube text-lg"></i>
-                    </a>
-                    <a href="#" aria-label="TikTok CGAO" title="TikTok"
-                        class="w-12 h-12 rounded-full glass flex items-center justify-center text-gray-300 hover:text-neon-green hover:border-neon-green/50 transition-all">
-                        <i class="fab fa-tiktok text-lg"></i>
-                    </a>
+                <!-- WorldSkills -->
+                <div class="group text-center">
+                    <div
+                        class="h-16 w-auto mx-auto flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                        <img src="assets/svg/logo_worldskills.svg" alt="Logotipo WorldSkills"
+                            class="h-full object-contain">
+                    </div>
+                    <span class="text-xs text-gray-500 font-mono hidden group-hover:block animate-fade-in">Estándar
+                        Global</span>
                 </div>
 
-                <!-- Copyright -->
-                <div class="text-center md:text-right">
-                    <p class="text-gray-400 text-sm">
-                        &copy; 2026 <span class="text-neon-green">CGAO SKILLS</span>. Todos los derechos reservados.
-                    </p>
-                    <p class="text-gray-500 text-xs mt-1">
-                        Centro de Gestión Agroempresarial del Oriente - SENA
-                    </p>
+                <!-- SENNOVA -->
+                <div class="group text-center">
+                    <div
+                        class="h-16 w-auto mx-auto border-2 border-white/20 px-4 py-2 rounded flex items-center justify-center mb-3 group-hover:border-neon-green group-hover:scale-110 transition-all">
+                        <img src="assets/svg/logo_sennova.svg" alt="Logotipo SENNOVA" class="h-10 object-contain">
+                    </div>
+                    <span
+                        class="text-xs text-gray-500 font-mono hidden group-hover:block animate-fade-in">Investigación</span>
+                </div>
+
+                <!-- Alcaldía -->
+                <div class="group text-center">
+                    <div
+                        class="h-20 w-20 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-3 group-hover:bg-blue-500/20 group-hover:scale-110 transition-all">
+                        <i class="fas fa-landmark text-3xl text-gray-400 group-hover:text-blue-400"
+                            aria-hidden="true"></i>
+                    </div>
+                    <span class="text-xs text-gray-500 font-mono hidden group-hover:block animate-fade-in">Alcaldía de
+                        Vélez</span>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- JAVASCRIPT -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
+    <script src="js/content.js"></script>
     <script src="js/app.js"></script>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- FOOTER PROFESIONAL -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <footer class="bg-slate-950 pt-20 pb-10 border-t border-white/5 relative overflow-hidden">
+        <!-- Background Grid -->
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Column -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div
+                            class="w-10 h-10 rounded bg-neon-green flex items-center justify-center text-slate-950 font-black text-xl">
+                            C
+                        </div>
+                        <span class="text-2xl font-black text-white tracking-tight">CGAO <span
+                                class="text-neon-green">SKILLS</span></span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-sm mb-6">
+                        Centro de Gestión Agroempresarial del Oriente.
+                        Elevando el estándar de la formación técnica en Vélez, Santander.
+                        Donde la tradición se encuentra con la tecnología.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" title="Facebook" aria-label="Visitar nuestra página de Facebook"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-slate-950 transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" title="Instagram" aria-label="Visitar nuestra página de Instagram"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-amber-gold hover:text-slate-950 transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" title="LinkedIn" aria-label="Visitar nuestra página de LinkedIn"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-blue-400 hover:text-slate-950 transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Enlaces Rápidos</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#agenda" title="Agenda" aria-label="Ver agenda del evento"
+                                class="hover:text-neon-green transition-colors">Agenda</a></li>
+                        <li><a href="#skills" title="Skills" aria-label="Ver áreas de competencia"
+                                class="hover:text-neon-green transition-colors">Skills</a></li>
+                        <li><a href="#blueprints" title="Blueprints" aria-label="Ver planos de construcción técnica"
+                                class="hover:text-neon-green transition-colors">Blueprints</a></li>
+                        <li><a href="#resultados" title="Resultados" aria-label="Ver resultados y casos de éxito"
+                                class="hover:text-neon-green transition-colors">Resultados</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contacto</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-amber-gold mt-1"></i>
+                            <span>Vélez, Santander<br>Sede Principal CGAO</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-neon-green"></i>
+                            <span>skills@cgao.edu.co</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span>+57 (607) 123 4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs">
+                    &copy; 2026 CGAO Skills. Todos los derechos reservados.
+                </p>
+                <div class="flex items-center gap-2 text-gray-500 text-xs">
+                    <span>Desarrollado con</span>
+                    <i class="fas fa-heart text-red-500 animate-pulse"></i>
+                    <span>por Talento SENA</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

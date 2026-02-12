@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a"/><stop offset="50%" stop-color="#39FF14"/><stop offset="100%" stop-color="#FFBF00"/>
+    </linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="bg"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Glow ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.15" filter="url(#bg)">
+    <animate attributeName="r" values="85;95;85" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Soil base -->
+  <ellipse cx="100" cy="160" rx="50" ry="12" fill="#3f2d1a" opacity="0.6"/>
+  <ellipse cx="100" cy="157" rx="45" ry="8" fill="#5c3d1e" opacity="0.4"/>
+
+  <!-- Plant stem -->
+  <path d="M100 155 Q100 110 100 60" stroke="#22c55e" stroke-width="4" fill="none" stroke-linecap="round">
+    <animate attributeName="d" values="M100 155 Q100 110 100 60;M100 155 Q98 108 100 55;M100 155 Q100 110 100 60" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Leaves with glow -->
+  <g filter="url(#g)">
+    <path d="M100 115 Q70 100 60 80 Q70 110 100 115" fill="url(#leafGrad)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="-5 85 115;5 85 115;-5 85 115" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M100 95 Q130 80 145 60 Q130 90 100 95" fill="url(#leafGrad)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="5 120 95;-5 120 95;5 120 95" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+    <path d="M100 75 Q75 60 65 45 Q75 70 100 75" fill="url(#leafGrad)" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" values="-3 85 75;3 85 75;-3 85 75" dur="3.5s" repeatCount="indefinite" begin="1s"/>
+    </path>
+  </g>
+
+  <!-- Fruit/Guava at top -->
+  <ellipse cx="100" cy="55" rx="15" ry="13" fill="#FFBF00" filter="url(#g)">
+    <animate attributeName="ry" values="13;15;13" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="96" cy="52" rx="4" ry="3" fill="#FDE68A" opacity="0.5"/>
+
+  <!-- Floating pollen/particles -->
+  <circle r="2" fill="#39FF14" opacity="0.6" filter="url(#g)">
+    <animateMotion dur="6s" repeatCount="indefinite" path="M80,130 Q60,80 90,50 Q110,30 120,70 Q130,110 80,130"/>
+  </circle>
+  <circle r="1.5" fill="#FFBF00" opacity="0.5" filter="url(#g)">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M120,140 Q140,90 110,55 Q90,35 80,80 Q70,120 120,140"/>
+  </circle>
+</svg>

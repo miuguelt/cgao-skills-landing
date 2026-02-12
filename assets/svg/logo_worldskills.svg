@@ -1,0 +1,4 @@
+<svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 10l5 15h15l-12 10 5 15-13-10-13 10 5-15-12-10h15z" fill="#004a99"/>
+    <text x="50" y="42" font-family="Arial, sans-serif" font-weight="900" font-size="32" fill="white">world<tspan fill="#ed1c24">skills</tspan></text>
+</svg>
