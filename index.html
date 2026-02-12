@@ -38,7 +38,7 @@
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- NAVIGATION -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <nav class="fixed top-0 left-0 right-0 z-50 glass">
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -106,7 +106,7 @@
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- HERO SECTION -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-32">
         <!-- Floating Particles Background -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="particle w-4 h-4 top-20 left-10 opacity-40 ani-delay-0"></div>
@@ -389,6 +389,221 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- APROPIACIÓN: ECOSISTEMA DEL EVENTO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="apropiacion" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full glass text-blue-400 text-sm font-medium mb-4">
+                    <i class="fas fa-project-diagram mr-1"></i> Ciclo Formativo
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    Ecosistema del <span class="text-glow text-neon-green">Evento</span>
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    La competencia no es un evento aislado. Es un <span class="text-amber-gold font-semibold">ciclo
+                        formativo continuo</span>
+                    que transforma aprendices en campeones de clase mundial.
+                </p>
+            </div>
+
+            <!-- Flow Diagram SVG -->
+            <div class="glass rounded-3xl p-8 md:p-12 mb-12 overflow-x-auto relative group">
+                <!-- Grid Background inside container -->
+                <div class="absolute inset-0 grid-pattern opacity-30 rounded-3xl pointer-events-none"></div>
+
+                <div class="min-w-[700px] relative z-10">
+                    <svg viewBox="0 0 1000 450" class="w-full" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#39FF14" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#22c55e" stop-opacity="0.2" />
+                            </linearGradient>
+                            <linearGradient id="neon-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#d97706" stop-opacity="0.2" />
+                            </linearGradient>
+                            <linearGradient id="neon-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.2" />
+                            </linearGradient>
+                            <filter id="glow-intense" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <filter id="glass-inset" x="-10%" y="-10%" width="120%" height="120%">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                                <feColorMatrix in="blur" type="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze" />
+                                <feComposite in="SourceGraphic" in2="ooze" operator="atop" />
+                            </filter>
+                        </defs>
+
+                        <!-- Connecting Lines with Animation -->
+                        <!-- Path 1: Convocatoria -> Pruebas -->
+                        <path d="M200 65 L260 65" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="255,60 265,65 255,70" fill="#39FF14" />
+
+                        <!-- Path 2: Pruebas -> Campamento -->
+                        <path d="M420 65 L480 65" stroke="#60a5fa" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash-reverse opacity-60" />
+                        <polygon points="475,60 485,65 475,70" fill="#60a5fa" />
+
+                        <!-- Path 3: Campamento -> Evento -->
+                        <path d="M640 65 L700 65" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="695,60 705,65 695,70" fill="#FFBF00" />
+
+                        <!-- Path 4: Evento -> Evaluacion -->
+                        <path d="M850 130 L850 180" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,175 850,185 855,175" fill="#39FF14" />
+
+                        <!-- Path 5: Evaluacion -> Certificacion -->
+                        <path d="M850 240 L850 290" stroke="#a855f7" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,285 850,295 855,285" fill="#a855f7" />
+
+                        <!-- Path 6: Certificacion -> WorldSkills -->
+                        <path d="M850 350 L850 390" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
+                            class="animate-dash opacity-60" />
+                        <polygon points="845,385 850,395 855,385" fill="#FFBF00" />
+
+                        <!-- Nodes -->
+                        <!-- 1. Convocatoria -->
+                        <g transform="translate(20, 30)">
+                            <rect width="180" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="url(#neon-green)"
+                                stroke-width="2" filter="url(#glow-intense)" />
+                            <rect width="180" height="70" rx="12" fill="url(#neon-green)" class="opacity-10" />
+                            <text x="90" y="30" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="800" font-size="14">CONVOCATORIA</text>
+                            <text x="90" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Aprendices CGAO</text>
+                        </g>
+
+                        <!-- 2. Pruebas Teóricas -->
+                        <g transform="translate(260, 30)">
+                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#60a5fa"
+                                stroke-width="2" />
+                            <text x="80" y="30" text-anchor="middle" fill="#60a5fa" font-family="Inter"
+                                font-weight="700" font-size="13">PRUEBAS ONLINE</text>
+                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Filtro Técnico</text>
+                        </g>
+
+                        <!-- 3. Campamento -->
+                        <g transform="translate(480, 30)">
+                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#FFBF00"
+                                stroke-width="2" />
+                            <text x="80" y="30" text-anchor="middle" fill="#FFBF00" font-family="Inter"
+                                font-weight="700" font-size="13">CAMPAMENTO</text>
+                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                font-size="11">Entrenamiento Intensivo</text>
+                        </g>
+
+                        <!-- 4. EL EVENTO (Centerpiece) -->
+                        <g transform="translate(710, 10)">
+                            <rect width="280" height="120" rx="20" fill="rgba(10, 10, 15, 0.9)" stroke="#39FF14"
+                                stroke-width="3" filter="url(#glow-intense)" />
+
+                            <!-- Header -->
+                            <rect x="0" y="0" width="280" height="40" rx="20" fill="rgba(57, 255, 20, 0.1)" />
+                            <text x="140" y="28" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="900" font-size="16" letter-spacing="1">LA FRAGUA</text>
+
+                            <!-- Internal Modules -->
+                            <g transform="translate(15, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(57,255,20,0.05)" stroke="#39FF14"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Precisión</text>
+                            </g>
+                            <g transform="translate(102.5, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(255,191,0,0.05)" stroke="#FFBF00"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Resolución</text>
+                            </g>
+                            <g transform="translate(190, 50)">
+                                <rect width="75" height="55" rx="8" fill="rgba(96,165,250,0.05)" stroke="#60a5fa"
+                                    stroke-width="1" stroke-opacity="0.5" />
+                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
+                                    font-weight="bold">Innovación</text>
+                            </g>
+                        </g>
+
+                        <!-- 5. Evaluación Pares -->
+                        <g transform="translate(710, 180)">
+                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#a855f7"
+                                stroke-width="1.5" />
+                            <text x="140" y="35" text-anchor="middle" fill="#a855f7" font-family="Inter"
+                                font-weight="600" font-size="13">EVALUACIÓN EXTERNA (Jueces)</text>
+                        </g>
+
+                        <!-- 6. Certificación -->
+                        <g transform="translate(710, 290)">
+                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#39FF14"
+                                stroke-width="1.5" />
+                            <text x="140" y="25" text-anchor="middle" fill="#39FF14" font-family="Inter"
+                                font-weight="800" font-size="13">CERTIFICACIÓN</text>
+                            <text x="140" y="45" text-anchor="middle" fill="#9ca3af" font-family="Inter"
+                                map="11">Excelencia Laboral</text>
+                        </g>
+
+                        <!-- 7. WorldSkills -->
+                        <g transform="translate(710, 390)">
+                            <rect width="280" height="50" rx="12" fill="url(#neon-gold)" stroke="#FFBF00"
+                                stroke-width="2" filter="url(#glow-intense)" />
+                            <text x="140" y="32" text-anchor="middle" fill="#000" font-family="Inter" font-weight="900"
+                                font-size="14" letter-spacing="1">WORLDSKILLS REGIONAL</text>
+                        </g>
+
+                        <!-- Decorative 'FLOW' Text -->
+                        <text x="100" y="300" font-family="Inter" font-weight="900" font-size="120"
+                            fill="rgba(255,255,255,0.03)" class="pe-none">FLOW</text>
+
+                    </svg>
+                </div>
+            </div>
+
+            <!-- 3 Module Cards -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass rounded-2xl p-6 text-center hover:border-neon-green/40 transition-colors group">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-neon-green/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-crosshairs text-neon-green text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Precisión y Velocidad</h4>
+                    <p class="text-gray-300 text-sm">Módulo 1: Ejecución técnica bajo presión de tiempo, precisión
+                        milimétrica en cada entregable.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center hover:border-amber-gold/40 transition-colors group">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-amber-gold/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-puzzle-piece text-amber-gold text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Resolución de Problemas</h4>
+                    <p class="text-gray-300 text-sm">Módulo 2: Desafíos reales del sector productivo que requieren
+                        pensamiento crítico y creatividad.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center hover:border-blue-400/40 transition-colors group">
+                    <div
+                        class="w-16 h-16 mx-auto rounded-2xl bg-blue-400/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-leaf text-blue-400 text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">Innovación Sostenible</h4>
+                    <p class="text-gray-300 text-sm">Módulo 3: Soluciones con enfoque de sostenibilidad ambiental y
+                        responsabilidad social.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- SKILLS CATEGORIES SECTION -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <section id="skills" class="py-20 md:py-32 relative">
@@ -610,6 +825,131 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- AGENDA: CRONOGRAMA -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="ruta" class="py-20 md:py-32 relative bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full glass text-amber-gold text-sm font-medium mb-4">
+                    <i class="fas fa-calendar-alt mr-1"></i> Cronograma
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    La Ruta del <span class="text-glow text-neon-green">Competidor</span>
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Cuatro días de intensidad técnica. Desde el desembarco hasta la gloria.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- DÍA 0 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-gray-500 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-gray-500/20">00</span>
+                        <div class="px-3 py-1 rounded bg-gray-500/10 text-gray-400 text-xs font-bold uppercase">Día Cero
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">El Desembarco</h3>
+                    <p class="text-gray-400 text-sm mb-4">Acreditación y Calibración</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Registro de expertos y competidores</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Sorteo de puestos de trabajo</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-neon-green mt-1"></i>
+                            <span>Familiarización con equipos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 1 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-neon-green hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-neon-green/20">01</span>
+                        <div class="px-3 py-1 rounded bg-neon-green/10 text-neon-green text-xs font-bold uppercase">
+                            Inicio</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">La Fragua</h3>
+                    <p class="text-gray-400 text-sm mb-4">Módulos de Velocidad</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-play text-neon-green mt-1"></i>
+                            <span>Ceremonia de Inauguración</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-bolt text-amber-gold mt-1"></i>
+                            <span>Módulo 1: Precisión Técnica</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-clock text-blue-400 mt-1"></i>
+                            <span>Pruebas contrarreloj</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 2 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-blue-400 hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-blue-400/20">02</span>
+                        <div class="px-3 py-1 rounded bg-blue-400/10 text-blue-400 text-xs font-bold uppercase">Reto
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Resistencia</h3>
+                    <p class="text-gray-400 text-sm mb-4">Resolución de Problemas</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-brain text-purple-400 mt-1"></i>
+                            <span>Módulo 2: Desafío Sorpresa</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-leaf text-neon-green mt-1"></i>
+                            <span>Módulo 3: Sostenibilidad (5%)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-lock text-red-400 mt-1"></i>
+                            <span>Cierre de evaluación ciega</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- DÍA 3 -->
+                <div
+                    class="glass p-6 rounded-2xl border-t-4 border-amber-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-4xl font-black text-amber-gold/20">03</span>
+                        <div class="px-3 py-1 rounded bg-amber-gold/10 text-amber-gold text-xs font-bold uppercase">
+                            Final</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">El Veredicto</h3>
+                    <p class="text-gray-400 text-sm mb-4">Clausura y Premiación</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-bullhorn text-neon-green mt-1"></i>
+                            <span>Feedback de Expertos</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-trophy text-amber-gold mt-1"></i>
+                            <span>Ceremonia de Medallas</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-handshake text-blue-400 mt-1"></i>
+                            <span>Networking Empresarial</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1187,131 +1527,6 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- AGENDA: CRONOGRAMA -->
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="agenda" class="py-20 md:py-32 relative bg-slate-900/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 rounded-full glass text-amber-gold text-sm font-medium mb-4">
-                    <i class="fas fa-calendar-alt mr-1"></i> Cronograma
-                </span>
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">
-                    La Ruta del <span class="text-glow text-neon-green">Competidor</span>
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Cuatro días de intensidad técnica. Desde el desembarco hasta la gloria.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-4 gap-6">
-                <!-- DÍA 0 -->
-                <div
-                    class="glass p-6 rounded-2xl border-t-4 border-gray-500 hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="text-4xl font-black text-gray-500/20">00</span>
-                        <div class="px-3 py-1 rounded bg-gray-500/10 text-gray-400 text-xs font-bold uppercase">Día Cero
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">El Desembarco</h3>
-                    <p class="text-gray-400 text-sm mb-4">Acreditación y Calibración</p>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-neon-green mt-1"></i>
-                            <span>Registro de expertos y competidores</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-neon-green mt-1"></i>
-                            <span>Sorteo de puestos de trabajo</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-check text-neon-green mt-1"></i>
-                            <span>Familiarización con equipos</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DÍA 1 -->
-                <div
-                    class="glass p-6 rounded-2xl border-t-4 border-neon-green hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="text-4xl font-black text-neon-green/20">01</span>
-                        <div class="px-3 py-1 rounded bg-neon-green/10 text-neon-green text-xs font-bold uppercase">
-                            Inicio</div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">La Fragua</h3>
-                    <p class="text-gray-400 text-sm mb-4">Módulos de Velocidad</p>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-play text-neon-green mt-1"></i>
-                            <span>Ceremonia de Inauguración</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-bolt text-amber-gold mt-1"></i>
-                            <span>Módulo 1: Precisión Técnica</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-clock text-blue-400 mt-1"></i>
-                            <span>Pruebas contrarreloj</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DÍA 2 -->
-                <div
-                    class="glass p-6 rounded-2xl border-t-4 border-blue-400 hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="text-4xl font-black text-blue-400/20">02</span>
-                        <div class="px-3 py-1 rounded bg-blue-400/10 text-blue-400 text-xs font-bold uppercase">Reto
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Resistencia</h3>
-                    <p class="text-gray-400 text-sm mb-4">Resolución de Problemas</p>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-brain text-purple-400 mt-1"></i>
-                            <span>Módulo 2: Desafío Sorpresa</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-leaf text-neon-green mt-1"></i>
-                            <span>Módulo 3: Sostenibilidad (5%)</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-lock text-red-400 mt-1"></i>
-                            <span>Cierre de evaluación ciega</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- DÍA 3 -->
-                <div
-                    class="glass p-6 rounded-2xl border-t-4 border-amber-gold hover:-translate-y-2 transition-transform duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <span class="text-4xl font-black text-amber-gold/20">03</span>
-                        <div class="px-3 py-1 rounded bg-amber-gold/10 text-amber-gold text-xs font-bold uppercase">
-                            Final</div>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">El Veredicto</h3>
-                    <p class="text-gray-400 text-sm mb-4">Clausura y Premiación</p>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-bullhorn text-neon-green mt-1"></i>
-                            <span>Feedback de Expertos</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-trophy text-amber-gold mt-1"></i>
-                            <span>Ceremonia de Medallas</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <i class="fas fa-handshake text-blue-400 mt-1"></i>
-                            <span>Networking Empresarial</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- SKILLS: HABILIDADES EN COMPETENCIA -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <section id="criterios" class="py-20 md:py-32 relative">
@@ -1445,386 +1660,6 @@
                                 <p>El experto evalúa calidad usando una escala predefinida (ej. 0-1-2-3). Requiere
                                     calibración previa entre jueces.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- APROPIACIÓN: ECOSISTEMA DEL EVENTO -->
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="apropiacion" class="py-20 md:py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 rounded-full glass text-blue-400 text-sm font-medium mb-4">
-                    <i class="fas fa-project-diagram mr-1"></i> Ciclo Formativo
-                </span>
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">
-                    Ecosistema del <span class="text-glow text-neon-green">Evento</span>
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    La competencia no es un evento aislado. Es un <span class="text-amber-gold font-semibold">ciclo
-                        formativo continuo</span>
-                    que transforma aprendices en campeones de clase mundial.
-                </p>
-            </div>
-
-            <!-- Flow Diagram SVG -->
-            <div class="glass rounded-3xl p-8 md:p-12 mb-12 overflow-x-auto relative group">
-                <!-- Grid Background inside container -->
-                <div class="absolute inset-0 grid-pattern opacity-30 rounded-3xl pointer-events-none"></div>
-
-                <div class="min-w-[700px] relative z-10">
-                    <svg viewBox="0 0 1000 450" class="w-full" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#39FF14" stop-opacity="0.8" />
-                                <stop offset="100%" stop-color="#22c55e" stop-opacity="0.2" />
-                            </linearGradient>
-                            <linearGradient id="neon-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#FFBF00" stop-opacity="0.8" />
-                                <stop offset="100%" stop-color="#d97706" stop-opacity="0.2" />
-                            </linearGradient>
-                            <linearGradient id="neon-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
-                                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.2" />
-                            </linearGradient>
-                            <filter id="glow-intense" x="-50%" y="-50%" width="200%" height="200%">
-                                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
-                                <feMerge>
-                                    <feMergeNode in="coloredBlur" />
-                                    <feMergeNode in="SourceGraphic" />
-                                </feMerge>
-                            </filter>
-                            <filter id="glass-inset" x="-10%" y="-10%" width="120%" height="120%">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                <feColorMatrix in="blur" type="matrix"
-                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ooze" />
-                                <feComposite in="SourceGraphic" in2="ooze" operator="atop" />
-                            </filter>
-                        </defs>
-
-                        <!-- Connecting Lines with Animation -->
-                        <!-- Path 1: Convocatoria -> Pruebas -->
-                        <path d="M200 65 L260 65" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash opacity-60" />
-                        <polygon points="255,60 265,65 255,70" fill="#39FF14" />
-
-                        <!-- Path 2: Pruebas -> Campamento -->
-                        <path d="M420 65 L480 65" stroke="#60a5fa" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash-reverse opacity-60" />
-                        <polygon points="475,60 485,65 475,70" fill="#60a5fa" />
-
-                        <!-- Path 3: Campamento -> Evento -->
-                        <path d="M640 65 L700 65" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash opacity-60" />
-                        <polygon points="695,60 705,65 695,70" fill="#FFBF00" />
-
-                        <!-- Path 4: Evento -> Evaluacion -->
-                        <path d="M850 130 L850 180" stroke="#39FF14" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash opacity-60" />
-                        <polygon points="845,175 850,185 855,175" fill="#39FF14" />
-
-                        <!-- Path 5: Evaluacion -> Certificacion -->
-                        <path d="M850 240 L850 290" stroke="#a855f7" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash opacity-60" />
-                        <polygon points="845,285 850,295 855,285" fill="#a855f7" />
-
-                        <!-- Path 6: Certificacion -> WorldSkills -->
-                        <path d="M850 350 L850 390" stroke="#FFBF00" stroke-width="2" stroke-dasharray="10 5"
-                            class="animate-dash opacity-60" />
-                        <polygon points="845,385 850,395 855,385" fill="#FFBF00" />
-
-                        <!-- Nodes -->
-                        <!-- 1. Convocatoria -->
-                        <g transform="translate(20, 30)">
-                            <rect width="180" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="url(#neon-green)"
-                                stroke-width="2" filter="url(#glow-intense)" />
-                            <rect width="180" height="70" rx="12" fill="url(#neon-green)" class="opacity-10" />
-                            <text x="90" y="30" text-anchor="middle" fill="#39FF14" font-family="Inter"
-                                font-weight="800" font-size="14">CONVOCATORIA</text>
-                            <text x="90" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
-                                font-size="11">Aprendices CGAO</text>
-                        </g>
-
-                        <!-- 2. Pruebas Teóricas -->
-                        <g transform="translate(260, 30)">
-                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#60a5fa"
-                                stroke-width="2" />
-                            <text x="80" y="30" text-anchor="middle" fill="#60a5fa" font-family="Inter"
-                                font-weight="700" font-size="13">PRUEBAS ONLINE</text>
-                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
-                                font-size="11">Filtro Técnico</text>
-                        </g>
-
-                        <!-- 3. Campamento -->
-                        <g transform="translate(480, 30)">
-                            <rect width="160" height="70" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#FFBF00"
-                                stroke-width="2" />
-                            <text x="80" y="30" text-anchor="middle" fill="#FFBF00" font-family="Inter"
-                                font-weight="700" font-size="13">CAMPAMENTO</text>
-                            <text x="80" y="50" text-anchor="middle" fill="#9ca3af" font-family="Inter"
-                                font-size="11">Entrenamiento Intensivo</text>
-                        </g>
-
-                        <!-- 4. EL EVENTO (Centerpiece) -->
-                        <g transform="translate(710, 10)">
-                            <rect width="280" height="120" rx="20" fill="rgba(10, 10, 15, 0.9)" stroke="#39FF14"
-                                stroke-width="3" filter="url(#glow-intense)" />
-
-                            <!-- Header -->
-                            <rect x="0" y="0" width="280" height="40" rx="20" fill="rgba(57, 255, 20, 0.1)" />
-                            <text x="140" y="28" text-anchor="middle" fill="#39FF14" font-family="Inter"
-                                font-weight="900" font-size="16" letter-spacing="1">LA FRAGUA</text>
-
-                            <!-- Internal Modules -->
-                            <g transform="translate(15, 50)">
-                                <rect width="75" height="55" rx="8" fill="rgba(57,255,20,0.05)" stroke="#39FF14"
-                                    stroke-width="1" stroke-opacity="0.5" />
-                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
-                                    font-weight="bold">Precisión</text>
-                            </g>
-                            <g transform="translate(102.5, 50)">
-                                <rect width="75" height="55" rx="8" fill="rgba(255,191,0,0.05)" stroke="#FFBF00"
-                                    stroke-width="1" stroke-opacity="0.5" />
-                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
-                                    font-weight="bold">Resolución</text>
-                            </g>
-                            <g transform="translate(190, 50)">
-                                <rect width="75" height="55" rx="8" fill="rgba(96,165,250,0.05)" stroke="#60a5fa"
-                                    stroke-width="1" stroke-opacity="0.5" />
-                                <text x="37.5" y="25" text-anchor="middle" fill="#ddd" font-size="10"
-                                    font-weight="bold">Innovación</text>
-                            </g>
-                        </g>
-
-                        <!-- 5. Evaluación Pares -->
-                        <g transform="translate(710, 180)">
-                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#a855f7"
-                                stroke-width="1.5" />
-                            <text x="140" y="35" text-anchor="middle" fill="#a855f7" font-family="Inter"
-                                font-weight="600" font-size="13">EVALUACIÓN EXTERNA (Jueces)</text>
-                        </g>
-
-                        <!-- 6. Certificación -->
-                        <g transform="translate(710, 290)">
-                            <rect width="280" height="60" rx="12" fill="rgba(20, 20, 25, 0.8)" stroke="#39FF14"
-                                stroke-width="1.5" />
-                            <text x="140" y="25" text-anchor="middle" fill="#39FF14" font-family="Inter"
-                                font-weight="800" font-size="13">CERTIFICACIÓN</text>
-                            <text x="140" y="45" text-anchor="middle" fill="#9ca3af" font-family="Inter"
-                                map="11">Excelencia Laboral</text>
-                        </g>
-
-                        <!-- 7. WorldSkills -->
-                        <g transform="translate(710, 390)">
-                            <rect width="280" height="50" rx="12" fill="url(#neon-gold)" stroke="#FFBF00"
-                                stroke-width="2" filter="url(#glow-intense)" />
-                            <text x="140" y="32" text-anchor="middle" fill="#000" font-family="Inter" font-weight="900"
-                                font-size="14" letter-spacing="1">WORLDSKILLS REGIONAL</text>
-                        </g>
-
-                        <!-- Decorative 'FLOW' Text -->
-                        <text x="100" y="300" font-family="Inter" font-weight="900" font-size="120"
-                            fill="rgba(255,255,255,0.03)" class="pe-none">FLOW</text>
-
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 3 Module Cards -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass rounded-2xl p-6 text-center hover:border-neon-green/40 transition-colors group">
-                    <div
-                        class="w-16 h-16 mx-auto rounded-2xl bg-neon-green/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-crosshairs text-neon-green text-2xl"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-2">Precisión y Velocidad</h4>
-                    <p class="text-gray-300 text-sm">Módulo 1: Ejecución técnica bajo presión de tiempo, precisión
-                        milimétrica en cada entregable.</p>
-                </div>
-                <div class="glass rounded-2xl p-6 text-center hover:border-amber-gold/40 transition-colors group">
-                    <div
-                        class="w-16 h-16 mx-auto rounded-2xl bg-amber-gold/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-puzzle-piece text-amber-gold text-2xl"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-2">Resolución de Problemas</h4>
-                    <p class="text-gray-300 text-sm">Módulo 2: Desafíos reales del sector productivo que requieren
-                        pensamiento crítico y creatividad.</p>
-                </div>
-                <div class="glass rounded-2xl p-6 text-center hover:border-blue-400/40 transition-colors group">
-                    <div
-                        class="w-16 h-16 mx-auto rounded-2xl bg-blue-400/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-leaf text-blue-400 text-2xl"></i>
-                    </div>
-                    <h4 class="text-lg font-bold text-white mb-2">Innovación Sostenible</h4>
-                    <p class="text-gray-300 text-sm">Módulo 3: Soluciones con enfoque de sostenibilidad ambiental y
-                        responsabilidad social.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- TRANSFERENCIA: IMPACTO ESPERADO -->
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="transferencia" class="py-20 md:py-32 relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-neon-green/5 to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 rounded-full glass text-neon-green text-sm font-medium mb-4">
-                    <i class="fas fa-bullhorn mr-1"></i> Resultados Tangibles
-                </span>
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">
-                    <span class="text-glow-gold text-amber-gold">Impacto</span> Esperado
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Al implementar <span class="text-neon-green font-semibold">CGAO SKILLS</span>, el centro obtendrá
-                    <span class="text-amber-gold font-semibold">tres resultados tangibles</span> que transformarán la
-                    región.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Visibilidad -->
-                <div
-                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-neon-green/40 transition-colors">
-                    <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-neon-green/10 to-transparent rounded-full blur-3xl">
-                    </div>
-                    <div class="relative z-10">
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-green to-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-eye text-slate-950 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Visibilidad</h3>
-                        <p class="text-gray-200 leading-relaxed text-justify">
-                            Posicionamiento de <span class="text-neon-green font-semibold">Vélez</span> no solo como
-                            capital folclórica,
-                            sino como <span class="text-amber-gold font-semibold">hub tecnológico</span> del oriente
-                            colombiano.
-                            Una marca que trasciende lo local.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Calidad Formativa -->
-                <div
-                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-amber-gold/40 transition-colors">
-                    <div
-                        class="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-amber-gold/10 to-transparent rounded-full blur-3xl">
-                    </div>
-                    <div class="relative z-10">
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-gold to-orange-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-graduation-cap text-slate-950 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Calidad Formativa</h3>
-                        <p class="text-gray-200 leading-relaxed text-justify">
-                            Los instructores deberán <span class="text-amber-gold font-semibold">actualizar sus
-                                currículos</span> para
-                            preparar a los aprendices para la competencia. Elevación orgánica del estándar académico.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Alianzas -->
-                <div
-                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-blue-400/40 transition-colors">
-                    <div
-                        class="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full blur-3xl">
-                    </div>
-                    <div class="relative z-10">
-                        <div
-                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-handshake text-slate-950 text-2xl"></i>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4">Alianzas</h3>
-                        <p class="text-gray-200 leading-relaxed text-justify">
-                            Las <span class="text-blue-400 font-semibold">empresas locales</span> (fábricas de
-                            bocadillo, cooperativas)
-                            podrán patrocinar los desafíos, validando que los aprendices resuelven
-                            <span class="text-neon-green font-semibold">problemas reales</span> de la industria.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <!-- EVALUACIÓN: INDICADORES DE ÉXITO -->
-    <!-- ═══════════════════════════════════════════════════════════════ -->
-    <section id="evaluacion" class="py-20 md:py-32 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="inline-block px-4 py-1 rounded-full glass text-amber-gold text-sm font-medium mb-4">
-                    <i class="fas fa-tachometer-alt mr-1"></i> Métricas
-                </span>
-                <h2 class="text-4xl md:text-6xl font-bold mb-4">
-                    Indicadores de <span class="text-glow text-neon-green">Éxito</span>
-                </h2>
-                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
-                    Para medir el éxito de la primera edición, se establecen estos
-                    <span class="text-amber-gold font-semibold">KPIs estratégicos</span>.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- KPI 1: Participación -->
-                <div
-                    class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-neon-green/40 transition-colors">
-                    <div class="text-6xl md:text-7xl font-black text-neon-green mb-4 group-hover:scale-110 transition-transform kpi-counter"
-                        data-target="15">0%</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Participación</h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Mínimo el <span class="text-neon-green font-semibold">15%</span> de la matrícula activa inscrita
-                        en la fase de filtros iniciales.
-                    </p>
-                    <div class="mt-6 pt-6 border-t border-white/10">
-                        <div class="kpi-progress h-2 bg-white/10 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-neon-green to-emerald-500 kpi-w-15"></div>
-                        </div>
-                        <p class="text-gray-400 text-xs mt-2">Meta: 15% de la matrícula</p>
-                    </div>
-                </div>
-
-                <!-- KPI 2: Nivel Técnico -->
-                <div
-                    class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-amber-gold/40 transition-colors">
-                    <div class="text-6xl md:text-7xl font-black text-amber-gold mb-4 group-hover:scale-110 transition-transform kpi-counter"
-                        data-target="80">0%</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Nivel Técnico</h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        El <span class="text-amber-gold font-semibold">80%</span> de los proyectos finalistas deben ser
-                        funcionales y aplicables a la industria local.
-                    </p>
-                    <div class="mt-6 pt-6 border-t border-white/10">
-                        <div class="kpi-progress h-2 bg-white/10 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-amber-gold to-orange-500 kpi-w-80"></div>
-                        </div>
-                        <p class="text-gray-400 text-xs mt-2">Meta: 80% funcionales</p>
-                    </div>
-                </div>
-
-                <!-- KPI 3: Retención -->
-                <div class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-blue-400/40 transition-colors">
-                    <div
-                        class="text-6xl md:text-7xl font-black text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Retención</h3>
-                    <p class="text-gray-300 text-sm leading-relaxed">
-                        Disminución de la <span class="text-blue-400 font-semibold">deserción escolar</span> en el
-                        trimestre
-                        previo al evento, motivada por la competencia.
-                    </p>
-                    <div class="mt-6 pt-6 border-t border-white/10">
-                        <div class="flex items-center justify-center gap-2">
-                            <i class="fas fa-chart-line text-neon-green"></i>
-                            <span class="text-gray-300 text-xs">Efecto motivacional medible</span>
                         </div>
                     </div>
                 </div>
@@ -2296,6 +2131,171 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- TRANSFERENCIA: IMPACTO ESPERADO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="transferencia" class="py-20 md:py-32 relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-neon-green/5 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full glass text-neon-green text-sm font-medium mb-4">
+                    <i class="fas fa-bullhorn mr-1"></i> Resultados Tangibles
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="text-glow-gold text-amber-gold">Impacto</span> Esperado
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Al implementar <span class="text-neon-green font-semibold">CGAO SKILLS</span>, el centro obtendrá
+                    <span class="text-amber-gold font-semibold">tres resultados tangibles</span> que transformarán la
+                    región.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Visibilidad -->
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-neon-green/40 transition-colors">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-neon-green/10 to-transparent rounded-full blur-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-green to-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-eye text-slate-950 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Visibilidad</h3>
+                        <p class="text-gray-200 leading-relaxed text-justify">
+                            Posicionamiento de <span class="text-neon-green font-semibold">Vélez</span> no solo como
+                            capital folclórica,
+                            sino como <span class="text-amber-gold font-semibold">hub tecnológico</span> del oriente
+                            colombiano.
+                            Una marca que trasciende lo local.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Calidad Formativa -->
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-amber-gold/40 transition-colors">
+                    <div
+                        class="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-amber-gold/10 to-transparent rounded-full blur-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-gold to-orange-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-graduation-cap text-slate-950 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Calidad Formativa</h3>
+                        <p class="text-gray-200 leading-relaxed text-justify">
+                            Los instructores deberán <span class="text-amber-gold font-semibold">actualizar sus
+                                currículos</span> para
+                            preparar a los aprendices para la competencia. Elevación orgánica del estándar académico.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Alianzas -->
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group hover:border-blue-400/40 transition-colors">
+                    <div
+                        class="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full blur-3xl">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-handshake text-slate-950 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Alianzas</h3>
+                        <p class="text-gray-200 leading-relaxed text-justify">
+                            Las <span class="text-blue-400 font-semibold">empresas locales</span> (fábricas de
+                            bocadillo, cooperativas)
+                            podrán patrocinar los desafíos, validando que los aprendices resuelven
+                            <span class="text-neon-green font-semibold">problemas reales</span> de la industria.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- EVALUACIÓN: INDICADORES DE ÉXITO -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <section id="evaluacion" class="py-20 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 rounded-full glass text-amber-gold text-sm font-medium mb-4">
+                    <i class="fas fa-tachometer-alt mr-1"></i> Métricas
+                </span>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                    Indicadores de <span class="text-glow text-neon-green">Éxito</span>
+                </h2>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+                    Para medir el éxito de la primera edición, se establecen estos
+                    <span class="text-amber-gold font-semibold">KPIs estratégicos</span>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- KPI 1: Participación -->
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-neon-green/40 transition-colors">
+                    <div class="text-6xl md:text-7xl font-black text-neon-green mb-4 group-hover:scale-110 transition-transform kpi-counter"
+                        data-target="15">0%</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Participación</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Mínimo el <span class="text-neon-green font-semibold">15%</span> de la matrícula activa inscrita
+                        en la fase de filtros iniciales.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <div class="kpi-progress h-2 bg-white/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-neon-green to-emerald-500 kpi-w-15"></div>
+                        </div>
+                        <p class="text-gray-400 text-xs mt-2">Meta: 15% de la matrícula</p>
+                    </div>
+                </div>
+
+                <!-- KPI 2: Nivel Técnico -->
+                <div
+                    class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-amber-gold/40 transition-colors">
+                    <div class="text-6xl md:text-7xl font-black text-amber-gold mb-4 group-hover:scale-110 transition-transform kpi-counter"
+                        data-target="80">0%</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Nivel Técnico</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        El <span class="text-amber-gold font-semibold">80%</span> de los proyectos finalistas deben ser
+                        funcionales y aplicables a la industria local.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <div class="kpi-progress h-2 bg-white/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-amber-gold to-orange-500 kpi-w-80"></div>
+                        </div>
+                        <p class="text-gray-400 text-xs mt-2">Meta: 80% funcionales</p>
+                    </div>
+                </div>
+
+                <!-- KPI 3: Retención -->
+                <div class="glass rounded-3xl p-8 md:p-10 text-center group hover:border-blue-400/40 transition-colors">
+                    <div
+                        class="text-6xl md:text-7xl font-black text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Retención</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Disminución de la <span class="text-blue-400 font-semibold">deserción escolar</span> en el
+                        trimestre
+                        previo al evento, motivada por la competencia.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-white/10">
+                        <div class="flex items-center justify-center gap-2">
+                            <i class="fas fa-chart-line text-neon-green"></i>
+                            <span class="text-gray-300 text-xs">Efecto motivacional medible</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
