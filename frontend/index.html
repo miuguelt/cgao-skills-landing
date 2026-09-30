@@ -3,139 +3,420 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102b24">
-  <meta name="description" content="CGAO Skills: información, calendario y recursos de la competencia técnica del CGAO en Vélez, Santander.">
+  <meta name="theme-color" content="#070a0f">
+  <meta name="description" content="CGAO Skills 2026: La Fragua del Oriente. Información, áreas técnicas, estándares de prueba y recursos del Centro de Gestión Agroempresarial del Oriente en Vélez, Santander.">
   <title>CGAO Skills 2026 | La Fragua del Oriente</title>
   <link rel="icon" href="assets/svg/logo_sena.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ==================================================================== -->
+  <!-- ENCABEZADO INSTITUCIONAL                                             -->
+  <!-- ==================================================================== -->
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="#inicio" aria-label="CGAO Skills, inicio">
-        <img src="assets/svg/logo_sena.svg" alt="">
-        <span><strong>CGAO</strong> Skills</span>
+      <a class="brand" href="#inicio" aria-label="CGAO Skills, volver al inicio">
+        <div class="brand-logo-wrap">
+          <img src="assets/svg/logo_sena.svg" alt="Logotipo SENA">
+        </div>
+        <div class="brand-text">
+          <span class="title">CGAO <span>SKILLS</span></span>
+          <span class="subtitle">La Fragua del Oriente</span>
+        </div>
       </a>
+
+      <!-- Navegación para escritorio -->
       <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#identidad">Identidad</a>
+        <a href="#ecosistema">Ecosistema</a>
         <a href="#areas">Áreas</a>
+        <a href="#blueprints">Planos</a>
         <a href="#agenda">Calendario</a>
         <a href="#evaluacion">Evaluación</a>
+        <a href="#transferencia">Impacto</a>
+        <a href="#aliados">Aliados</a>
         <a class="nav-cta" href="#recursos">Recursos</a>
       </nav>
+
+      <!-- Menú móvil desplegable -->
       <details class="mobile-menu">
-        <summary aria-label="Abrir menú">Menú</summary>
+        <summary aria-label="Abrir menú de navegación">Menú</summary>
         <nav aria-label="Navegación móvil">
+          <a href="#inicio">Inicio</a>
+          <a href="#identidad">Identidad</a>
+          <a href="#ecosistema">Ecosistema</a>
           <a href="#areas">Áreas</a>
+          <a href="#blueprints">Planos técnicos</a>
           <a href="#agenda">Calendario</a>
-          <a href="#evaluacion">Evaluación</a>
+          <a href="#evaluacion">Evaluación y rúbrica</a>
+          <a href="#transferencia">Impacto regional</a>
+          <a href="#aliados">Aliados</a>
           <a href="#recursos">Recursos</a>
         </nav>
       </details>
     </div>
   </header>
 
+  <!-- ==================================================================== -->
+  <!-- CONTENIDO PRINCIPAL                                                  -->
+  <!-- ==================================================================== -->
   <main id="contenido" tabindex="-1">
+
+    <!-- PORTADA / HERO -->
     <section class="hero" id="inicio" aria-labelledby="titulo-principal">
       <div class="container hero-layout">
         <div class="hero-copy">
           <p class="eyebrow">Vélez · Regional Santander · 2026</p>
           <h1 id="titulo-principal">CGAO Skills <span>La Fragua del Oriente</span></h1>
-          <p class="lead">Encuentro de habilidades técnicas para mostrar lo aprendido, resolver retos y compartir prácticas de trabajo responsables.</p>
+          <p class="hero-lead">
+            Plataforma formativa de excelencia técnica del Centro de Gestión Agroempresarial del Oriente. Un espacio donde la destreza práctica, la rigurosidad metodológica y la innovación se articulan para transformar la región mediante estándares internacionales.
+          </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#agenda">Consultar calendario</a>
-            <a class="button button-secondary" href="#recursos">Ver recursos</a>
+            <a class="button button-secondary" href="#recursos">Ver recursos y reto</a>
           </div>
-          <p class="event-note">Las fechas de esta página corresponden a los documentos disponibles del evento. Confirme cualquier cambio en los canales institucionales del CGAO.</p>
+          <p class="hero-note">
+            Las fechas y condiciones de esta página corresponden a la documentación vigente del evento en el CGAO Subsede Vélez.
+          </p>
         </div>
-        <aside class="hero-card" aria-label="Fechas principales">
-          <span class="hero-card-label">Fechas principales</span>
-          <strong>12–29 <small>octubre</small></strong>
-          <span>Inscripciones, jornadas técnicas y clausura</span>
-          <a href="#agenda">Ver las cuatro fechas <span aria-hidden="true">→</span></a>
+
+        <aside class="hero-card" aria-label="Ficha técnica de la competencia">
+          <div class="hero-card-header">
+            <span class="hero-card-badge">Estándar WorldSkills</span>
+            <span class="eyebrow" style="margin: 0;">SENA 2026</span>
+          </div>
+          <div class="hero-card-stat">
+            <strong>12–29 <small>octubre</small></strong>
+            <span>Jornadas técnicas, calibración y premiación</span>
+          </div>
+          <div class="hero-grid-mini">
+            <div class="mini-stat">
+              <span class="mini-stat-val">4</span>
+              <span class="mini-stat-label">Áreas técnicas</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-val">100</span>
+              <span class="mini-stat-label">Puntos de rúbrica</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-val">12</span>
+              <span class="mini-stat-label">Criterios de reto</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-val">Día Cero</span>
+              <span class="mini-stat-label">Calibración de jueces</span>
+            </div>
+          </div>
+          <a class="button button-secondary" href="#agenda" style="width: 100%; text-align: center;">Ver detalles del cronograma →</a>
         </aside>
       </div>
     </section>
 
-    <section class="section intro-section" aria-labelledby="acerca-titulo">
+    <hr class="section-divider">
+
+    <!-- IDENTIDAD INSTITUCIONAL (MISIÓN, VISIÓN Y CONTEXTO) -->
+    <section class="section" id="identidad" aria-labelledby="identidad-titulo">
       <div class="container">
-        <p class="eyebrow">El encuentro</p>
-        <h2 id="acerca-titulo">Competencias técnicas con sentido local</h2>
-        <p class="section-intro">CGAO Skills reúne áreas de formación del Centro de Gestión Agroempresarial del Oriente. La propuesta conecta las habilidades técnicas con las necesidades productivas y culturales de Vélez y la región.</p>
+        <div class="section-heading text-center">
+          <p class="eyebrow">Identidad Institucional</p>
+          <h2 id="identidad-titulo">La Marca y el Propósito Formativo</h2>
+          <p class="section-intro">
+            El lema «La Fragua del Oriente» evoca el taller donde se forja el carácter técnico y la disciplina de nuestros aprendices, vinculando la vocación productiva de Santander con estándares de clase mundial.
+          </p>
+        </div>
+
+        <div class="bento-grid-2">
+          <!-- Misión -->
+          <article class="glass-panel identity-card">
+            <div>
+              <div class="identity-header">
+                <div class="identity-icon-wrap">
+                  <img src="assets/svg/mission.svg" alt="" aria-hidden="true">
+                </div>
+                <div>
+                  <span class="eyebrow">Nuestra Misión</span>
+                  <h3>Formación de Excelencia</h3>
+                </div>
+              </div>
+              <p style="margin-top: 1.25rem;">
+                Elevar el estándar técnico del talento humano en la provincia de Vélez, mediante una plataforma competitiva de alto rendimiento que valide la excelencia en habilidades agroindustriales y tecnológicas, bajo los principios de calidad, innovación y sostenibilidad del SENA.
+              </p>
+            </div>
+            <div class="hero-note" style="border-color: var(--amber-gold);">
+              Compromiso formativo con el desarrollo integral del aprendiz y las necesidades del sector empresarial.
+            </div>
+          </article>
+
+          <!-- Visión -->
+          <article class="glass-panel identity-card">
+            <div>
+              <div class="identity-header">
+                <div class="identity-icon-wrap green-accent">
+                  <img src="assets/svg/vision.svg" alt="" aria-hidden="true">
+                </div>
+                <div>
+                  <span class="eyebrow">Nuestra Visión</span>
+                  <h3>Referente Regional 2026</h3>
+                </div>
+              </div>
+              <p style="margin-top: 1.25rem;">
+                Consolidar a CGAO Skills como el referente de competencias técnicas del Oriente colombiano, articulando la formación profesional con las demandas del sector productivo y proyectando a los mejores aprendices a WorldSkills Colombia.
+              </p>
+            </div>
+            <div class="hero-note" style="border-color: var(--sena-green-light);">
+              Posicionamiento de Vélez y Santander como territorio de innovación aplicada y talento técnico calificado.
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section areas-section" id="areas" aria-labelledby="areas-titulo">
+    <hr class="section-divider">
+
+    <!-- ECOSISTEMA DEL EVENTO / FASES -->
+    <section class="section" id="ecosistema" aria-labelledby="ecosistema-titulo">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Áreas de formación</p>
-          <h2 id="areas-titulo">Habilidades que se encuentran</h2>
-          <p>Enfoques descritos en los materiales de CGAO Skills.</p>
+          <p class="eyebrow">Metodología y Proceso</p>
+          <h2 id="ecosistema-titulo">El Ecosistema Formativo del Evento</h2>
+          <p class="section-intro">
+            CGAO Skills no es una competencia aislada. Constituye un ciclo formativo progresivo diseñado para calibrar habilidades, verificar estándares y transferir buenas prácticas técnicas a la comunidad educativa.
+          </p>
         </div>
-        <div class="card-grid area-grid">
-          <article class="info-card area-card">
-            <img src="assets/svg/skill_agro.svg" alt="" loading="lazy">
-            <h3>Agroindustria</h3>
-            <p>Procesos productivos, transformación y calidad.</p>
+
+        <div class="ecosystem-flow">
+          <article class="glass-panel phase-card">
+            <span class="phase-number" aria-hidden="true">01</span>
+            <span class="phase-tag">Fase 1 · Convocatoria</span>
+            <h3>Filtro Técnico</h3>
+            <p>Convocatoria de aprendices en sus especialidades formativas y selección fundamentada en el desempeño pedagógico en talleres y ambientes de aprendizaje.</p>
           </article>
-          <article class="info-card area-card">
-            <img src="assets/svg/skill_finance.svg" alt="" loading="lazy">
-            <h3>Finanzas y gestión</h3>
-            <p>Organización de recursos, información y servicio.</p>
+
+          <article class="glass-panel phase-card">
+            <span class="phase-number" aria-hidden="true">02</span>
+            <span class="phase-tag">Fase 2 · Calibración</span>
+            <h3>Día Cero</h3>
+            <p>Acreditación, inducción en estaciones de trabajo, sorteo público de puestos y calibración de instrumentos bajo el consenso del panel de jueces evaluadores.</p>
           </article>
-          <article class="info-card area-card">
-            <img src="assets/svg/skill_music.svg" alt="" loading="lazy">
-            <h3>Música y cultura</h3>
-            <p>Prácticas artísticas vinculadas con la identidad regional.</p>
+
+          <article class="glass-panel phase-card">
+            <span class="phase-number" aria-hidden="true">03</span>
+            <span class="phase-tag">Fase 3 · Pruebas</span>
+            <h3>Jornadas en Vivo</h3>
+            <p>Desarrollo de los módulos prácticos contrarreloj, demostración de destrezas operativas, resolución de contingencias y ordenamiento de procesos.</p>
           </article>
-          <article class="info-card area-card">
-            <img src="assets/svg/skill_systems.svg" alt="" loading="lazy">
-            <h3>Sistemas y desarrollo</h3>
-            <p>Soluciones digitales, lógica y desarrollo de software.</p>
+
+          <article class="glass-panel phase-card">
+            <span class="phase-number" aria-hidden="true">04</span>
+            <span class="phase-tag">Fase 4 · Evaluación</span>
+            <h3>Transferencia</h3>
+            <p>Calificación transparente mediante la regla M-J-P, retroalimentación técnica integral entre jueces e instructores y premiación solemne.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section agenda-section" id="agenda" aria-labelledby="agenda-titulo">
+    <hr class="section-divider">
+
+    <!-- ÁREAS DE FORMACIÓN -->
+    <section class="section" id="areas" aria-labelledby="areas-titulo">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Octubre de 2026</p>
-          <h2 id="agenda-titulo">Calendario del evento</h2>
-          <p>Una sola ruta para ubicar inscripciones, acreditación, pruebas y clausura.</p>
+          <p class="eyebrow">Especialidades Técnicas</p>
+          <h2 id="areas-titulo">Áreas de Formación en Competencia</h2>
+          <p class="section-intro">
+            Las cuatro disciplinas técnicas del Centro de Gestión Agroempresarial del Oriente integradas en la edición 2026.
+          </p>
         </div>
+
+        <div class="bento-grid-4">
+          <article class="glass-panel area-card">
+            <div class="area-icon-wrap">
+              <img src="assets/svg/skill_agro.svg" alt="" loading="lazy">
+            </div>
+            <span class="area-badge">Agroindustria</span>
+            <h3>Transformación y Calidad</h3>
+            <p>Procesamiento de alimentos, derivados lácteos y frutícolas, inocuidad alimentaria, Buenas Prácticas de Manufactura (BPM) y control analítico de calidad.</p>
+          </article>
+
+          <article class="glass-panel area-card">
+            <div class="area-icon-wrap">
+              <img src="assets/svg/skill_finance.svg" alt="" loading="lazy">
+            </div>
+            <span class="area-badge">Finanzas y Gestión</span>
+            <h3>Administración y Costos</h3>
+            <p>Modelado de información contable, estructuras de presupuestos agropecuarios, auditoría documental, análisis financiero y servicio empresarial.</p>
+          </article>
+
+          <article class="glass-panel area-card">
+            <div class="area-icon-wrap">
+              <img src="assets/svg/skill_music.svg" alt="" loading="lazy">
+            </div>
+            <span class="area-badge">Música y Cultura</span>
+            <h3>Producción Sonora</h3>
+            <p>Prácticas interpretativas de la tradición folclórica veleña, montaje escénico, microfonía, calibración acústica y sonorización en vivo.</p>
+          </article>
+
+          <article class="glass-panel area-card">
+            <div class="area-icon-wrap">
+              <img src="assets/svg/skill_systems.svg" alt="" loading="lazy">
+            </div>
+            <span class="area-badge">Sistemas · ADSO</span>
+            <h3>Desarrollo de Software</h3>
+            <p>Análisis y desarrollo de software, lógica algorítmica, validación de datos, almacenamiento local, accesibilidad web y aplicaciones de alto rendimiento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- PLANOS TÉCNICOS DE CONSTRUCCIÓN (BLUEPRINTS) -->
+    <section class="section" id="blueprints" aria-labelledby="blueprints-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Especificaciones de Clase Mundial</p>
+          <h2 id="blueprints-titulo">Planos de Construcción Técnica</h2>
+          <p class="section-intro">
+            Cada prueba se fundamenta en un plano técnico maestro (Blueprint) que delimita el alcance modular, las tolerancias de medición objetiva y los aspectos de calidad evaluables.
+          </p>
+        </div>
+
+        <div class="bento-grid-2">
+          <!-- Blueprint 01: Software -->
+          <article class="glass-panel blueprint-card">
+            <div>
+              <div class="blueprint-header">
+                <div>
+                  <span class="area-badge">Blueprint 01</span>
+                  <h3>Software Development (ADSO)</h3>
+                </div>
+                <span class="blueprint-id">MOD-ADSO</span>
+              </div>
+              <p>Construcción de módulos interactivos de pedidos, validaciones en tiempo real, persistencia en almacenamiento local y separación estricta de responsabilidades.</p>
+              <ul class="blueprint-specs">
+                <li>Medición (M): 69 puntos en lógica de cálculo, validación y persistencia.</li>
+                <li>Juicio (J): 23 puntos en arquitectura de interfaz y sustentación técnica.</li>
+                <li>Proceso (P): 8 puntos en ergonomía y gestión ambiental del puesto.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Blueprint 02: Agroindustria -->
+          <article class="glass-panel blueprint-card">
+            <div>
+              <div class="blueprint-header">
+                <div>
+                  <span class="area-badge">Blueprint 02</span>
+                  <h3>Procesamiento Agroindustrial</h3>
+                </div>
+                <span class="blueprint-id">MOD-AGRO</span>
+              </div>
+              <p>Estandarización de fórmulas, balances de materia en pulpas y derivados, control de puntos críticos de control (HACCP) y empacado sostenible.</p>
+              <ul class="blueprint-specs">
+                <li>Medición (M): Grados Brix, acidez titulable, peso neto y rendimiento.</li>
+                <li>Juicio (J): Textura, brillo, uniformidad y presentación sensorial.</li>
+                <li>Proceso (P): Indumentaria sanitaria, asepsia y rotulado ambiental.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Blueprint 03: Finanzas -->
+          <article class="glass-panel blueprint-card">
+            <div>
+              <div class="blueprint-header">
+                <div>
+                  <span class="area-badge">Blueprint 03</span>
+                  <h3>Gestión Contable y Tributaria</h3>
+                </div>
+                <span class="blueprint-id">MOD-FINA</span>
+              </div>
+              <p>Elaboración de estados financieros para organizaciones campesinas, conciliación contable de operaciones comerciales y liquidación de nómina.</p>
+              <ul class="blueprint-specs">
+                <li>Medición (M): Exactitud aritmética en balances, retenciones y libros.</li>
+                <li>Juicio (J): Coherencia del dictamen financiero y claridad expositiva.</li>
+                <li>Proceso (P): Orden documental, trazabilidad y archivo físico/digital.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Blueprint 04: Música -->
+          <article class="glass-panel blueprint-card">
+            <div>
+              <div class="blueprint-header">
+                <div>
+                  <span class="area-badge">Blueprint 04</span>
+                  <h3>Sonido y Ejecución Instrumental</h3>
+                </div>
+                <span class="blueprint-id">MOD-MUSI</span>
+              </div>
+              <p>Montaje electroacústico de agrupaciones típicas, ruteo de señales, balance de mezcla estéreo y ejecución con fidelidad folclórica.</p>
+              <ul class="blueprint-specs">
+                <li>Medición (M): Niveles de presión sonora, ganancia sin distorsión y tiempos.</li>
+                <li>Juicio (J): Equilibrio tímbrico, dinámica y espacialidad en sala.</li>
+                <li>Proceso (P): Cuidado de cables, micrófonos y seguridad eléctrica.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- CALENDARIO DEL EVENTO -->
+    <section class="section" id="agenda" aria-labelledby="agenda-titulo">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">Cronograma Oficial</p>
+          <h2 id="agenda-titulo">Calendario del Evento</h2>
+          <p class="section-intro">
+            Las cuatro fechas oficiales de la competencia técnica concentradas en una sola ruta transparente para aprendices, instructores y evaluadores.
+          </p>
+        </div>
+
         <ol class="timeline">
           <li class="timeline-card">
             <p class="timeline-date">12 al 23 de octubre de 2026</p>
             <h3>Inscripciones</h3>
-            <p>Periodo de registro indicado en los documentos del evento.</p>
+            <p>Periodo de registro y verificación de requisitos a través de los canales institucionales del CGAO.</p>
           </li>
           <li class="timeline-card">
             <p class="timeline-date">26 de octubre de 2026</p>
             <h3>Acreditación y Día Cero</h3>
-            <p>Revisión de estaciones, familiarización y calibración técnica.</p>
+            <p>Acreditación de participantes, inducción, inspección de estaciones y calibración de instrumentos.</p>
           </li>
           <li class="timeline-card">
             <p class="timeline-date">26 al 28 de octubre de 2026</p>
             <h3>Pruebas técnicas</h3>
-            <p>Desarrollo de los módulos de competencia.</p>
+            <p>Desarrollo intensivo de los módulos de competencia en talleres y ambientes de aprendizaje.</p>
           </li>
           <li class="timeline-card">
             <p class="timeline-date">29 de octubre de 2026</p>
             <h3>Clausura y premiación</h3>
-            <p>Cierre del encuentro y reconocimiento a los participantes.</p>
+            <p>Deliberación del jurado, entrega de distinciones y cierre formal del certamen técnico.</p>
           </li>
         </ol>
       </div>
     </section>
 
+    <hr class="section-divider">
+
+    <!-- EVALUACIÓN Y CRITERIOS DETALLADOS -->
     <section class="section evaluation-section" id="evaluacion" aria-labelledby="evaluacion-titulo">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Reto formativo de ADSO</p>
           <h2 id="evaluacion-titulo">Así se evalúa el ejemplo de registro de pedidos</h2>
-          <p>El reto de ejemplo y la plantilla de Excel usan los mismos 12 criterios. Valida el tiempo y las condiciones con el instructor antes de aplicar este ejemplo como prueba oficial.</p>
+          <p class="section-intro">
+            El reto de ejemplo y la plantilla de Excel usan los mismos 12 criterios. Valida el tiempo y las condiciones con el instructor antes de aplicar este ejemplo como prueba oficial.
+          </p>
         </div>
+
+        <!-- Tarjetas de distribución de puntajes -->
         <div class="score-grid" aria-label="Distribución de los 100 puntos del ejemplo">
           <article class="score-card score-measure">
             <span class="score-type">M · Medición objetiva</span>
@@ -153,53 +434,322 @@
             <p>Aspectos observados durante la actividad, como ergonomía, orden y separación de residuos.</p>
           </article>
         </div>
-        <p class="rule-note"><strong>Regla general:</strong> M suma al menos 60 puntos, J no supera 30 y P no supera 10. El ejemplo cumple esa regla con M = 69 puntos, J = 23 puntos y P = 8 puntos.</p>
 
+        <p class="rule-note">
+          <strong>Regla general:</strong> M suma al menos 60 puntos, J no supera 30 y P no supera 10. El ejemplo cumple esa regla con M = 69 puntos, J = 23 puntos y P = 8 puntos.
+        </p>
+
+        <!-- Tabla detallada con los 12 criterios oficiales del reto ADSO -->
+        <div class="criteria-table-wrap" aria-label="Detalle de los 12 criterios de la rúbrica">
+          <table class="criteria-table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Módulo</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Aspecto evaluado</th>
+                <th scope="col">Criterio detallado y verificación observable</th>
+                <th scope="col" style="text-align: right;">Puntos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>M1</strong></td>
+                <td>Módulo A</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Reglas y cálculo del pedido</td>
+                <td>Alias de 2 a 40 caracteres; producto del catálogo; cantidad entera de 1 a 100; subtotal igual a cantidad por precio unitario. Se asignan 7 puntos cuando todos los datos y cálculos pasan los casos de comprobación.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">7</td>
+              </tr>
+              <tr>
+                <td><strong>M2</strong></td>
+                <td>Módulo B</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Registro del pedido</td>
+                <td>Crea un código consecutivo y registra alias, producto, cantidad, precio unitario, subtotal y estado inicial Pendiente. El pedido queda guardado con los campos correctos y el subtotal esperado.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">15</td>
+              </tr>
+              <tr>
+                <td><strong>M3</strong></td>
+                <td>Módulo B</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Validación de datos</td>
+                <td>Rechaza alias vacío o fuera del rango y cantidad no entera o fuera del rango; solo permite productos del catálogo con mensaje visible y sin crear pedidos inválidos.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">12</td>
+              </tr>
+              <tr>
+                <td><strong>M4</strong></td>
+                <td>Módulo B</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Consulta de pedidos</td>
+                <td>Muestra los campos del pedido; busca alias sin distinguir mayúsculas; filtra por estado Pendiente o Entregado de forma exacta.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">10</td>
+              </tr>
+              <tr>
+                <td><strong>M5</strong></td>
+                <td>Módulo B</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Estado, resumen y persistencia</td>
+                <td>Permite cambiar el estado; muestra la cantidad y el valor de pedidos Entregados; conserva pedidos y estados en el almacenamiento local al recargar la aplicación.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">13</td>
+              </tr>
+              <tr>
+                <td><strong>M6</strong></td>
+                <td>Módulo C</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Ordenamiento por subtotal</td>
+                <td>Ordena en orden descendente de mayor a menor subtotal; en caso de empate ubica primero el código menor; completa el ajuste dentro del tiempo establecido (30 minutos).</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">10</td>
+              </tr>
+              <tr>
+                <td><strong>M7</strong></td>
+                <td>Módulo D</td>
+                <td><span class="badge-m">M · Medición</span></td>
+                <td>Cierre y uso eficiente de la estación</td>
+                <td>Al finalizar, cierra los programas que ya no necesita, retira los archivos temporales de prueba creados para el reto y apaga el monitor o el equipo si no se va a usar de inmediato.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">2</td>
+              </tr>
+              <tr>
+                <td><strong>J1</strong></td>
+                <td>Módulo A</td>
+                <td><span class="badge-j">J · Juicio</span></td>
+                <td>Planeación técnica</td>
+                <td>Presenta un flujo claro y estructurado que representa el registro, consulta y cambio de estado del pedido según la escala cualitativa de 0 a 3 convertida proporcionalmente.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">8</td>
+              </tr>
+              <tr>
+                <td><strong>J2</strong></td>
+                <td>Módulo B</td>
+                <td><span class="badge-j">J · Juicio</span></td>
+                <td>Interfaz de la aplicación</td>
+                <td>Presenta información legible, controles con nombres comprensibles, contraste accesible y retroalimentación comprensible de errores al usuario.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">10</td>
+              </tr>
+              <tr>
+                <td><strong>J3</strong></td>
+                <td>Módulo C</td>
+                <td><span class="badge-j">J · Juicio</span></td>
+                <td>Explicación de la comprobación</td>
+                <td>Sustenta técnicamente ante los evaluadores cómo comprobó el algoritmo de orden descendente por subtotal y el criterio de desempate por código.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">5</td>
+              </tr>
+              <tr>
+                <td><strong>P1</strong></td>
+                <td>Módulo D</td>
+                <td><span class="badge-p">P · Proceso</span></td>
+                <td>Ergonomía y orden del puesto</td>
+                <td>Durante el desarrollo del reto mantiene una postura ergonómica adecuada, organiza sus elementos de trabajo y mantiene despejada el área de la estación.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">4</td>
+              </tr>
+              <tr>
+                <td><strong>P2</strong></td>
+                <td>Módulo D</td>
+                <td><span class="badge-p">P · Proceso</span></td>
+                <td>Separación de residuos</td>
+                <td>Deposita cada residuo en el recipiente identificado con su color: blanco para residuos aprovechables limpios y secos, verde para residuos orgánicos aprovechables y negro para residuos no aprovechables. Si no genera residuos, deja la estación limpia.</td>
+                <td style="text-align: right; font-weight: 700; color: #ffffff;">4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Módulo D: Sostenibilidad y Buenas Prácticas -->
         <aside class="sustainability-card" aria-labelledby="sostenibilidad-titulo">
           <div class="sustainability-mark" aria-hidden="true">D</div>
           <div>
             <p class="eyebrow">Módulo D · 10 puntos en este ejemplo</p>
             <h3 id="sostenibilidad-titulo">Sostenibilidad que se puede observar</h3>
-            <p>M7 asigna 2 puntos al cierre y uso eficiente de la estación: al terminar, cierra los programas que ya no necesitas, retira los archivos temporales de prueba y apaga el monitor o el equipo si no se va a usar de inmediato. P1 observa la postura y el orden del puesto. P2 asigna 4 puntos por separar los residuos: blanco para aprovechables limpios y secos, verde para orgánicos aprovechables y negro para no aprovechables. Si no generas residuos, deja la estación limpia.</p>
-            <p><a href="https://www.minambiente.gov.co/wp-content/uploads/2021/08/resolucion-2184-de-2019.pdf" target="_blank" rel="noopener noreferrer">Consulta el código nacional de colores, según la Resolución 2184 de 2019</a>.</p>
+            <p>
+              M7 asigna 2 puntos al cierre y uso eficiente de la estación: al terminar, cierra los programas que ya no necesitas, retira los archivos temporales de prueba y apaga el monitor o el equipo si no se va a usar de inmediato. P1 observa la postura y el orden del puesto. P2 asigna 4 puntos por separar los residuos: blanco para aprovechables limpios y secos, verde para orgánicos aprovechables y negro para no aprovechables. Si no generas residuos, deja la estación limpia.
+            </p>
+            <p>
+              <a href="https://www.minambiente.gov.co/wp-content/uploads/2021/08/resolucion-2184-de-2019.pdf" target="_blank" rel="noopener noreferrer">Consulta el código nacional de colores, según la Resolución 2184 de 2019</a>.
+            </p>
           </div>
         </aside>
-        <p class="privacy-note">El reto es local y de ejemplo. Usa alias para las pruebas; no registres datos personales reales.</p>
+
+        <p class="privacy-note">
+          El reto es local y de ejemplo. Usa alias para las pruebas; no registres datos personales reales.
+        </p>
       </div>
     </section>
 
-    <section class="section resources-section" id="recursos" aria-labelledby="recursos-titulo">
+    <hr class="section-divider">
+
+    <!-- TRANSFERENCIA E IMPACTO REGIONAL -->
+    <section class="section" id="transferencia" aria-labelledby="transferencia-titulo">
       <div class="container">
         <div class="section-heading">
+          <p class="eyebrow">Desarrollo Regional</p>
+          <h2 id="transferencia-titulo">Impacto y Resultados Tangibles</h2>
+          <p class="section-intro">
+            La implementación de CGAO Skills genera beneficios formativos y productivos que trascienden el aula y dinamizan el oriente de Santander.
+          </p>
+        </div>
+
+        <div class="bento-grid-3">
+          <article class="glass-panel transfer-card">
+            <span class="transfer-badge">Visibilidad</span>
+            <h3>Posicionamiento Territorial</h3>
+            <p>Consolidación de la provincia de Vélez como un nodo de desarrollo técnico de vanguardia, reconociendo el talento humano regional en escenarios departamentales y nacionales.</p>
+          </article>
+
+          <article class="glass-panel transfer-card">
+            <span class="transfer-badge">Calidad</span>
+            <h3>Actualización Curricular</h3>
+            <p>Alineación constante de los programas de formación técnica y tecnológica con las exigencias metodológicas y tecnológicas de WorldSkills International.</p>
+          </article>
+
+          <article class="glass-panel transfer-card">
+            <span class="transfer-badge">Pertinencia</span>
+            <h3>Articulación Productiva</h3>
+            <p>Vínculo directo entre aprendices calificados y los sectores agroempresarial, comercial y tecnológico de Santander, impulsando la inserción laboral calificada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- RECURSOS Y DESCARGAS OFICIALES -->
+    <section class="section resources-section" id="recursos" aria-labelledby="recursos-titulo">
+      <div class="container">
+        <div class="section-heading text-center">
           <p class="eyebrow">Documentos de apoyo</p>
           <h2 id="recursos-titulo">Reto y plantilla de evaluación</h2>
-          <p>Descarga los dos archivos del ejemplo: el reto para el aprendiz y la plantilla para registrar la evaluación.</p>
+          <p class="section-intro">
+            Descarga los dos archivos del ejemplo: el reto para el aprendiz y la plantilla para registrar la evaluación.
+          </p>
         </div>
+
         <div class="resource-list">
-          <article class="resource-card resource-featured">
-            <div><span class="file-type">WORD · EJEMPLO</span><h3>Reto de registro de pedidos</h3><p>Instrucciones, casos mínimos de comprobación y entregables para el ejercicio de ADSO.</p></div>
+          <article class="resource-card">
+            <div>
+              <span class="file-type">WORD · RETO FORMATIVO</span>
+              <h3>Reto de registro de pedidos</h3>
+              <p>Instrucciones completas, requisitos funcionales, catálogo de productos, validaciones esperadas y entregables del ejercicio de ADSO.</p>
+            </div>
             <a class="button button-primary" href="assets/documents/Reto_ejemplo_aprendiz_ADSO_CGAO_Skills.docx" download="Reto_ejemplo_aprendiz_ADSO_CGAO_Skills.docx">Descargar reto en Word</a>
           </article>
-          <article class="resource-card resource-featured">
-            <div><span class="file-type">EXCEL · 3 PARTICIPANTES</span><h3>Plantilla de evaluación</h3><p>Ingresa puntajes en las celdas amarillas; los subtotales y el total se calculan automáticamente.</p></div>
-            <a class="button button-primary" href="assets/documents/Evaluacion_Participantes_CGAO_Skills.xlsx" download="Evaluacion_Participantes_CGAO_Skills.xlsx">Descargar plantilla Excel</a>
+
+          <article class="resource-card">
+            <div>
+              <span class="file-type">EXCEL · PLANTILLA MAESTRA</span>
+              <h3>Plantilla de evaluación</h3>
+              <p>Ingresa puntajes en las celdas amarillas; los subtotales y el total se calculan automáticamente con fórmulas ponderadas para tres participantes.</p>
+            </div>
+            <a class="button button-gold" href="assets/documents/Evaluacion_Participantes_CGAO_Skills.xlsx" download="Evaluacion_Participantes_CGAO_Skills.xlsx">Descargar plantilla Excel</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="registration-note" aria-label="Información sobre inscripciones">
+    <!-- BANNER DE INSCRIPCIONES -->
+    <section class="registration-note" id="inscripciones" aria-label="Información sobre inscripciones">
       <div class="container registration-inner">
-        <div><p class="eyebrow">Inscripciones</p><h2>La página no recibe inscripciones</h2><p>Consulta los canales institucionales del CGAO para confirmar la convocatoria, los requisitos y los cupos disponibles.</p></div>
-        <a class="button button-secondary" href="#agenda">Revisar fechas</a>
+        <div>
+          <p class="eyebrow">Convocatoria Institucional</p>
+          <h2>La página no recibe inscripciones</h2>
+          <p>Consulta los canales institucionales del CGAO para confirmar la convocatoria, los requisitos y los cupos disponibles.</p>
+        </div>
+        <a class="button button-secondary" href="#agenda">Revisar fechas del calendario</a>
       </div>
     </section>
+
+    <!-- RED INSTITUCIONAL Y ALIADOS -->
+    <section class="section" id="aliados" aria-labelledby="aliados-titulo">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">Ecosistema Institucional</p>
+          <h2 id="aliados-titulo">Respaldo y Red Técnica</h2>
+          <p class="section-intro">
+            Iniciativa articulada por las dependencias técnicas y de investigación del SENA Regional Santander en beneficio de la comunidad formativa de Vélez.
+          </p>
+        </div>
+
+        <div class="partners-grid">
+          <div class="partner-item">
+            <div class="partner-logo-box">
+              <img src="assets/svg/logo_sena.svg" alt="Servicio Nacional de Aprendizaje SENA">
+            </div>
+            <span class="partner-label">SENA Dirección General</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-logo-box">
+              <img src="assets/svg/logo_sennova.svg" alt="Investigación, Desarrollo Tecnológico e Innovación SENNOVA">
+            </div>
+            <span class="partner-label">SENNOVA Investigación</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-logo-box">
+              <img src="assets/svg/logo_worldskills.svg" alt="WorldSkills Colombia">
+            </div>
+            <span class="partner-label">WorldSkills Estándar</span>
+          </div>
+
+          <div class="partner-item">
+            <div class="partner-logo-box">
+              <img src="assets/svg/trophy.svg" alt="CGAO Subsede Vélez Santander">
+            </div>
+            <span class="partner-label">CGAO Subsede Vélez</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ==================================================================== -->
+  <!-- PIE DE PÁGINA PROFESIONAL                                            -->
+  <!-- ==================================================================== -->
   <footer class="site-footer">
-    <div class="container footer-row">
-      <p><strong>CGAO Skills</strong> · Subsede Vélez · Regional Santander</p>
-      <a href="#inicio">Volver al inicio ↑</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-logo-wrap">
+              <img src="assets/svg/logo_sena.svg" alt="Logotipo SENA">
+            </div>
+            <div class="brand-text">
+              <span class="title">CGAO <span>SKILLS</span></span>
+              <span class="subtitle">La Fragua del Oriente</span>
+            </div>
+          </div>
+          <p>
+            Centro de Gestión Agroempresarial del Oriente (CGAO - Subsede Vélez), Regional Santander. Elevando el estándar de la formación profesional integral donde la tradición se encuentra con la tecnología.
+          </p>
+          <p class="eyebrow" style="margin-top: 0.5rem;">Sede Principal: Vélez, Santander, Colombia</p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.05rem; margin-bottom: 1.25rem;">Navegación Rápida</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#identidad">Identidad Institucional</a></li>
+            <li><a href="#ecosistema">Ecosistema del Evento</a></li>
+            <li><a href="#areas">Áreas de Competencia</a></li>
+            <li><a href="#blueprints">Planos Técnicos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.05rem; margin-bottom: 1.25rem;">Ruta y Recursos</h3>
+          <ul class="footer-links">
+            <li><a href="#agenda">Calendario de Pruebas</a></li>
+            <li><a href="#evaluacion">Rúbrica y Criterios ADSO</a></li>
+            <li><a href="#transferencia">Impacto Regional</a></li>
+            <li><a href="#recursos">Descarga de Reto y Plantilla</a></li>
+            <li><a href="#aliados">Respaldo Institucional</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 CGAO Skills · Todos los derechos reservados · Desarrollado con dedicación por Talento SENA</p>
+        <a href="#inicio" style="font-weight: 700; color: var(--amber-gold);">Volver al inicio ↑</a>
+      </div>
     </div>
   </footer>
 </body>
