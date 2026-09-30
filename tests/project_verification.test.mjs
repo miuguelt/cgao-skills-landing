@@ -47,13 +47,14 @@ test('Los enlaces internos y los recursos publicados sí existen', () => {
     );
 });
 
-test('El cronograma concentra las cuatro fechas de la documentación del evento', () => {
+test('El cronograma concentra las fechas oficiales del evento', () => {
     const agenda = sectionById('agenda');
     assert.ok(agenda, 'Debe existir una sola sección de agenda');
     assert.match(agenda, /12\s*(?:al|–|-)\s*23 de octubre de 2026/i);
     assert.match(agenda, /26 de octubre de 2026/i);
-    assert.match(agenda, /26\s*(?:al|–|-)\s*28 de octubre de 2026/i);
+    assert.match(agenda, /solo el 26 de octubre/i);
     assert.match(agenda, /29 de octubre de 2026/i);
+    assert.doesNotMatch(agenda, /28 de octubre/i);
     assert.equal((html.match(/id="agenda"/g) ?? []).length, 1);
     assert.doesNotMatch(html, /id="ruta"|contador regresivo/i);
 });
