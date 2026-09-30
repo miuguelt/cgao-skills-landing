@@ -1,0 +1,21 @@
+{
+  "name": "cgao-skills-landing",
+  "version": "1.0.0",
+  "description": "CGAO Skills Landing Page y Recursos de Competencia - SENA CGAO Subsede Vélez",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "generate-docs": "python scripts/generate_docs.py"
+  },
+  "keywords": [
+    "sena",
+    "cgao",
+    "skills",
+    "worldskills",
+    "adso",
+    "velez",
+    "santander"
+  ],
+  "author": "SENA CGAO Subsede Vélez",
+  "license": "MIT"
+}

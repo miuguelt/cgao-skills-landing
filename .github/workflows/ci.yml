@@ -1,0 +1,43 @@
+name: CI - Verificación CGAO Skills
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ '**' ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias para generación de documentos
+        run: |
+          pip install reportlab openpyxl pypdf
+
+      - name: Ejecutar pruebas automatizadas de agenda, documentos y rúbrica
+        run: npm test
+
+      - name: Ejecutar pruebas de documentos y compuerta de cobertura del código generador
+        run: python scripts/run_python_tests_with_function_coverage.py
+
+      - name: Publicar cobertura de funciones
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cobertura-funciones-python
+          path: coverage/python-function-coverage.json
+          if-no-files-found: warn
