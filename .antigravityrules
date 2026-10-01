@@ -273,6 +273,12 @@
 - El registro se activa de forma transparente mediante el auto-descubrimiento en `Sync-DashboardProjects.ps1`, el arranque del ecosistema (`START-DEVBRAIN.ps1`) y el script `New-DevBrainProject.ps1`.
 - Al crear una nueva carpeta o proyecto bajo `_projects/`, el agente debe asegurar que el auto-registro complete la sincronización en `_core/config.yml`, `port-registry.json`, `devbrain-runtime-manifest.json` y PostgreSQL `master_db`.
 
+### 9.1 Vista inicial obligatoria de SENNOVA CGAO
+
+- En el proyecto `_projects/sennova`, toda persona autenticada debe aterrizar en el módulo `grupos` y ver primero el **Grupo de investigadores CGAO**, con la pestaña `gruplac` abierta para mostrar el directorio de investigadores.
+- Esta vista inicial aplica a los roles `admin`, `investigador` y `aprendiz`. Las cuentas que tenían el rol `instructor` se unifican con `investigador`; el rol `aprendiz` conserva acceso al módulo `grupos`.
+- Mantén esta regla en `getHomeModule`, el estado inicial de `App` y el estado inicial de la pestaña en `GrupoModule`. Las pruebas de acceso por rol, inicio de la aplicación y módulo de grupo deben proteger este comportamiento.
+
 ## 10. Creación de Guías y Recursos Educativos (DevBrain Learner SDK)
 
 - Toda nueva guía interactiva o recurso educativo creado en la plataforma debe utilizar obligatoriamente el `devbrain-learner-sdk` (vía IIFE bundle o importación ES6).
