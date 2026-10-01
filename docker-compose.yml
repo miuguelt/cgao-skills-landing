@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: guia-sena-web
+    container_name: cgao-skills-web
     restart: always
     ports:
       - "8013:80"
