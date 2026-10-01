@@ -26,6 +26,14 @@ test('La página principal es accesible y tiene una navegación corta', () => {
     const navIds = [...html.matchAll(/<nav\b[^>]*aria-label="[^"]+"/g)];
     assert.ok(navIds.length >= 2, 'Debe ofrecer navegación para escritorio y móvil');
     assert.doesNotMatch(html, /cdn\.tailwindcss|fontawesome|fonts\.googleapis|app\.js|tailwind\.config\.js/i);
+    assert.doesNotMatch(html, /id="aliados"|href="#aliados"/i, 'La sección obsoleta de aliados y sus enlaces deben estar completamente retirados');
+});
+
+test('La interfaz incluye soporte para interacción móvil, indicador de desplazamiento y metadatos sociales', () => {
+    assert.match(html, /<meta\s+property="og:image"\s+content="assets\/svg\/[^"]+"/i, 'Debe incluir metadato og:image');
+    assert.match(html, /<meta\s+name="twitter:image"\s+content="assets\/svg\/[^"]+"/i, 'Debe incluir metadato twitter:image');
+    assert.match(html, /class="[^"]*table-scroll-hint[^"]*"/i, 'Debe incluir un indicador de desplazamiento horizontal para la tabla');
+    assert.match(html, /<script\b[^>]*>[\s\S]*mobile-menu[\s\S]*<\/script>/i, 'Debe incluir script para interacción del menú móvil');
 });
 
 test('Los enlaces internos y los recursos publicados sí existen', () => {
@@ -95,6 +103,17 @@ test('La web no simula inscripciones, resultados, cifras de impacto ni contactos
             );
         }
     }
+    for (const relativePath of ['scripts/audit_html.py', 'scripts/fix_button.py']) {
+        assert.equal(
+            fs.existsSync(path.join(rootDir, relativePath)),
+            false,
+            `No debe quedar el script temporal ${relativePath}`,
+        );
+    }
+
+    const dockerCompose = fs.readFileSync(path.join(rootDir, 'docker-compose.yml'), 'utf8');
+    assert.match(dockerCompose, /container_name:\s*cgao-skills-web/i, 'El contenedor debe llamarse cgao-skills-web');
+    assert.doesNotMatch(dockerCompose, /guia-sena-web/i, 'No debe quedar el nombre heredado guia-sena-web');
 });
 
 test('El centro de recursos publica una sola copia de cada archivo principal', () => {

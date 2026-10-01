@@ -32,7 +32,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-dim: #94a3b8;
   --border-glass: rgba(255, 255, 255, 0.09);
   --border-glass-light: rgba(255, 255, 255, 0.16);
   --border-focus: #f59e0b;
@@ -83,6 +83,26 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.32);
 }
 
 /* Enlace accesible para saltar al contenido */
@@ -103,6 +123,35 @@ body {
 .skip-link:focus {
   top: 1rem;
   outline: 3px solid #ffffff;
+}
+
+/* Utilidad accesible para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Adaptación a preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Enlaces globales */
@@ -378,7 +427,8 @@ p:last-child {
   position: absolute;
   top: calc(100% + 0.65rem);
   right: 0;
-  width: 17rem;
+  width: min(17rem, calc(100vw - 2.5rem));
+  max-width: calc(100vw - 2.5rem);
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-glass-light);
   border-radius: var(--radius-md);
@@ -627,6 +677,15 @@ p:last-child {
   color: var(--text-muted);
 }
 
+.hero-card-eyebrow {
+  margin: 0;
+}
+
+.hero-card-btn {
+  width: 100%;
+  text-align: center;
+}
+
 /* --------------------------------------------------------------------------
    Tarjetas Glassmorphism & Bento Grid Reutilizables
    -------------------------------------------------------------------------- */
@@ -734,6 +793,18 @@ p:last-child {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.identity-body {
+  margin-top: 1.25rem;
+}
+
+.note-amber {
+  border-color: var(--amber-gold);
+}
+
+.note-green {
+  border-color: var(--sena-green-light);
 }
 
 /* --------------------------------------------------------------------------
@@ -875,6 +946,63 @@ p:last-child {
   font-weight: bold;
 }
 
+/* Modificadores temáticos por disciplina técnica */
+.blueprint-card.bp-adso {
+  border-left-color: var(--electric-blue);
+}
+
+.blueprint-card.bp-adso .blueprint-id {
+  color: var(--electric-blue);
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+.blueprint-card.bp-adso .blueprint-specs li::before {
+  color: var(--electric-blue);
+}
+
+.blueprint-card.bp-agro {
+  border-left-color: var(--sena-green-light);
+}
+
+.blueprint-card.bp-agro .blueprint-id {
+  color: var(--sena-green-light);
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.blueprint-card.bp-agro .blueprint-specs li::before {
+  color: var(--sena-green-light);
+}
+
+.blueprint-card.bp-fina {
+  border-left-color: var(--amber-gold);
+}
+
+.blueprint-card.bp-fina .blueprint-id {
+  color: var(--amber-gold);
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.blueprint-card.bp-fina .blueprint-specs li::before {
+  color: var(--amber-gold);
+}
+
+.blueprint-card.bp-musi {
+  border-left-color: var(--purple-accent);
+}
+
+.blueprint-card.bp-musi .blueprint-id {
+  color: var(--purple-accent);
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+.blueprint-card.bp-musi .blueprint-specs li::before {
+  color: var(--purple-accent);
+}
+
 /* --------------------------------------------------------------------------
    Sección Calendario del Evento (Timeline Oficial)
    -------------------------------------------------------------------------- */
@@ -1007,15 +1135,45 @@ p:last-child {
   margin-bottom: 2.5rem;
 }
 
+/* Indicador visual de desplazamiento horizontal en dispositivos móviles */
+.table-scroll-hint {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--amber-gold);
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+.table-scroll-hint .hint-icon {
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+@media (min-width: 992px) {
+  .table-scroll-hint {
+    display: none;
+  }
+}
+
 /* Tabla completa de los 12 criterios oficiales */
 .criteria-table-wrap {
   width: 100%;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   background: var(--bg-surface);
   margin-bottom: 2.5rem;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.criteria-table-wrap:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
 }
 
 .criteria-table {
@@ -1026,6 +1184,9 @@ p:last-child {
 }
 
 .criteria-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background: var(--bg-surface-elevated);
   padding: 1rem 1.25rem;
   font-weight: 700;
@@ -1167,6 +1328,10 @@ p:last-child {
   background: var(--sena-green-light);
 }
 
+.resource-card.card-excel::before {
+  background: var(--amber-gold);
+}
+
 .file-type {
   font-size: 0.72rem;
   font-weight: 800;
@@ -1202,70 +1367,6 @@ p:last-child {
 }
 
 /* --------------------------------------------------------------------------
-   Sección Aliados y Respaldo Institucional
-   -------------------------------------------------------------------------- */
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .partners-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.partner-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-md);
-  transition: all 0.25s ease;
-}
-
-.partner-item:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: var(--sena-green-light);
-  transform: translateY(-4px);
-}
-
-.partner-logo-box {
-  height: 4.5rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.75rem;
-}
-
-.partner-logo-box img {
-  max-height: 3.5rem;
-  max-width: 80%;
-  object-fit: contain;
-  filter: brightness(0.9) grayscale(0.2);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.partner-item:hover .partner-logo-box img {
-  filter: brightness(1.1) grayscale(0);
-  transform: scale(1.05);
-}
-
-.partner-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* --------------------------------------------------------------------------
    Pie de página profesional (Footer)
    -------------------------------------------------------------------------- */
 .site-footer {
@@ -1294,6 +1395,17 @@ p:last-child {
   gap: 1rem;
 }
 
+.footer-col-title {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-location {
+  margin-top: 0.5rem;
+}
+
 .footer-links {
   list-style: none;
   display: flex;
@@ -1304,6 +1416,7 @@ p:last-child {
 .footer-links a {
   font-size: 0.9rem;
   color: var(--text-secondary);
+  transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
@@ -1325,5 +1438,114 @@ p:last-child {
 @media (min-width: 768px) {
   .footer-bottom {
     flex-direction: row;
+  }
+}
+
+.footer-back-to-top {
+  font-weight: 700;
+  color: var(--amber-gold);
+  transition: color 0.2s ease;
+}
+
+.footer-back-to-top:hover {
+  color: var(--amber-gold-light);
+}
+
+/* ==========================================================================
+   Estilos de Impresión Profesional (Ahorro de tinta y legibilidad en papel)
+   ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #0f172a !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .site-header,
+  .skip-link,
+  .mobile-menu,
+  .hero-actions,
+  .footer-back-to-top,
+  .registration-note,
+  .table-scroll-hint {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .section {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+    page-break-inside: avoid;
+  }
+
+  .section-divider {
+    border-top: 1px solid #cbd5e1 !important;
+  }
+
+  .glass-panel,
+  .hero-card,
+  .timeline-card,
+  .score-card,
+  .resource-card,
+  .sustainability-card {
+    border: 1px solid #94a3b8 !important;
+    border-radius: 4px !important;
+    background: #f8fafc !important;
+    page-break-inside: avoid;
+  }
+
+  .criteria-table-wrap {
+    box-shadow: none !important;
+    border: 1px solid #94a3b8 !important;
+    overflow: visible !important;
+  }
+
+  .criteria-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    font-size: 9pt !important;
+  }
+
+  .criteria-table th,
+  .criteria-table td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 5px 8px !important;
+    color: #0f172a !important;
+  }
+
+  .criteria-table th {
+    background: #f1f5f9 !important;
+    font-weight: bold !important;
+    position: static !important;
+  }
+
+  .badge-m,
+  .badge-j,
+  .badge-p {
+    border: 1px solid #64748b !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+    padding: 1px 4px !important;
+  }
+
+  .blueprint-specs li::before {
+    content: "• " !important;
+    color: #0f172a !important;
   }
 }
