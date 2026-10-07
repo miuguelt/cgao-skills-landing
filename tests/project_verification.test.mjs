@@ -88,7 +88,8 @@ test('La web no simula inscripciones, resultados, cifras de impacto ni contactos
     assert.doesNotMatch(html, /<form\b|registration-form|Enviar inscripción|¡Inscribir talento/i);
     assert.doesNotMatch(html, /Cargando resultados|Resultados en vivo|200\+|Participantes esperados/i);
     assert.doesNotMatch(html, /mailto:|tel:|@cgao\.edu\.co|facebook\.com|instagram\.com/i);
-    assert.match(html, /no recibe inscripciones/i);
+    assert.match(html, /registra tu participación/i);
+    assert.doesNotMatch(html, /la página no recibe inscripciones/i);
     for (const base of [frontendDir]) {
         for (const relativePath of [
             'js/app.js',
@@ -128,6 +129,31 @@ test('El centro de recursos publica una sola copia de cada archivo principal', (
     }
     assert.doesNotMatch(resources, /\.pdf|\.csv/i);
     assert.doesNotMatch(html, /id="resultados"|id="evaluacion-participantes"|id="inscribir"/i);
+});
+
+test('El centro de recursos ofrece el formulario de inscripción y su código QR debajo de las descargas', () => {
+    const resources = sectionById('recursos');
+    const formUrl = 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=gcPCyy4vk02R0VBskxas50RrkqRbqqBGhQDAaMxOholUOVZPUEJNVTVOSzM2Q1dCOUJIVjFNQkRHWi4u';
+    const downloadsIndex = resources.indexOf('Evaluacion_Participantes_CGAO_Skills.xlsx');
+    const registrationIndex = resources.indexOf('id="registro-inscripcion"');
+    const qrPath = path.join(frontendDir, 'assets', 'images', 'qr-inscripcion-cgao-skills.png');
+
+    assert.ok(downloadsIndex >= 0, 'La plantilla Excel debe aparecer antes del acceso al formulario');
+    assert.ok(registrationIndex > downloadsIndex, 'El bloque de inscripción debe ir después de los archivos descargables');
+    const linkStart = resources.indexOf('<a class="button button-primary" href="' + formUrl + '"');
+    const linkEnd = resources.indexOf('</a>', linkStart);
+    const linkMarkup = linkStart >= 0 && linkEnd >= 0 ? resources.slice(linkStart, linkEnd + '</a>'.length) : '';
+    const qrStart = resources.indexOf('<img class="enrollment-qr"');
+    const qrEnd = resources.indexOf('>', qrStart);
+    const qrMarkup = qrStart >= 0 && qrEnd >= 0 ? resources.slice(qrStart, qrEnd + 1) : '';
+
+    assert.ok(linkStart > registrationIndex, 'El enlace debe estar dentro del bloque de inscripción');
+    assert.ok(linkMarkup.includes('target="_blank"'), 'El formulario debe abrirse en otra pestaña');
+    assert.ok(linkMarkup.includes('rel="noopener noreferrer"'), 'El enlace externo debe usar rel seguro');
+    assert.ok(linkMarkup.includes('Abrir formulario de inscripción'), 'El enlace debe tener una etiqueta clara');
+    assert.ok(qrMarkup.includes('src="assets/images/qr-inscripcion-cgao-skills.png"'), 'La imagen debe usar el QR entregado');
+    assert.ok(qrMarkup.includes('alt="Código QR para abrir el formulario de inscripción"'), 'El QR debe tener texto alternativo accesible');
+    assert.ok(fs.existsSync(qrPath), 'Debe publicarse el código QR que entregó el usuario');
 });
 
 test('La página principal publica el reto Word y la plantilla Excel con contenido válido', () => {
