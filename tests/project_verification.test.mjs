@@ -59,8 +59,8 @@ test('El cronograma concentra las fechas oficiales del evento', () => {
     const agenda = sectionById('agenda');
     assert.ok(agenda, 'Debe existir una sola sección de agenda');
     assert.match(agenda, /12\s*(?:al|–|-)\s*23 de octubre de 2026/i);
-    assert.match(agenda, /27 de octubre de 2026/i);
-    assert.match(agenda, /solo el 27 de octubre/i);
+    assert.match(agenda, /28 de octubre de 2026/i);
+    assert.match(agenda, /solo el 28 de octubre/i);
     assert.match(agenda, /29 de octubre de 2026/i);
     assert.doesNotMatch(agenda, /28 de octubre/i);
     assert.equal((html.match(/id="agenda"/g) ?? []).length, 1);
@@ -124,7 +124,7 @@ test('El centro de recursos publica una sola copia de cada archivo principal', (
         'Reto_ejemplo_aprendiz_ADSO_CGAO_Skills.docx',
         'Evaluacion_Participantes_CGAO_Skills.xlsx',
     ]) {
-        const matches = [...resources.matchAll(new RegExp(`href="assets/documents/${filename.replaceAll('.', '\\.') }"`, 'g'))];
+        const matches = [...resources.matchAll(new RegExp(`href="assets/documents/${filename.replaceAll('.', '\\.')}"`, 'g'))];
         assert.equal(matches.length, 1, `${filename} debe aparecer una sola vez`);
     }
     assert.doesNotMatch(resources, /\.pdf|\.csv/i);
