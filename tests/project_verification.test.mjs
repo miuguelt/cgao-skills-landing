@@ -59,8 +59,8 @@ test('El cronograma concentra las fechas oficiales del evento', () => {
     const agenda = sectionById('agenda');
     assert.ok(agenda, 'Debe existir una sola sección de agenda');
     assert.match(agenda, /12\s*(?:al|–|-)\s*23 de octubre de 2026/i);
-    assert.match(agenda, /26 de octubre de 2026/i);
-    assert.match(agenda, /solo el 26 de octubre/i);
+    assert.match(agenda, /27 de octubre de 2026/i);
+    assert.match(agenda, /solo el 27 de octubre/i);
     assert.match(agenda, /29 de octubre de 2026/i);
     assert.doesNotMatch(agenda, /28 de octubre/i);
     assert.equal((html.match(/id="agenda"/g) ?? []).length, 1);
